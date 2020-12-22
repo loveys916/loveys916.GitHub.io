@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>基础 | love</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/icons/128.png">
+    <link rel="manifest" href="/manifest.json">
+    <script language="javascript" type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script language="javascript" type="text/javascript" src="/js/MouseClickEffect.js"></script>
+    <meta name="description" content="love">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.142a074b.css" as="style"><link rel="preload" href="/assets/js/app.559d69a3.js" as="script"><link rel="preload" href="/assets/js/3.5ef223c7.js" as="script"><link rel="preload" href="/assets/js/1.171e35cc.js" as="script"><link rel="preload" href="/assets/js/15.29f5931d.js" as="script"><link rel="preload" href="/assets/js/11.e77c0f03.js" as="script"><link rel="prefetch" href="/assets/js/10.a20084fe.js"><link rel="prefetch" href="/assets/js/12.b01ecebd.js"><link rel="prefetch" href="/assets/js/13.88839404.js"><link rel="prefetch" href="/assets/js/14.e1ca8ad1.js"><link rel="prefetch" href="/assets/js/16.640a863a.js"><link rel="prefetch" href="/assets/js/17.1e66dded.js"><link rel="prefetch" href="/assets/js/18.43c69731.js"><link rel="prefetch" href="/assets/js/19.a816fa71.js"><link rel="prefetch" href="/assets/js/4.7ed447b5.js"><link rel="prefetch" href="/assets/js/5.3da76f78.js"><link rel="prefetch" href="/assets/js/6.5f8de717.js"><link rel="prefetch" href="/assets/js/7.d0e495c6.js"><link rel="prefetch" href="/assets/js/8.3066479f.js"><link rel="prefetch" href="/assets/js/9.d314079d.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.142a074b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div><div class="theme-container" data-v-319dd33c><div data-v-319dd33c><div id="loader-wrapper" class="loading-wrapper" data-v-1c4f0192 data-v-319dd33c data-v-319dd33c><div class="loader-main" data-v-1c4f0192><div data-v-1c4f0192></div><div data-v-1c4f0192></div><div data-v-1c4f0192></div><div data-v-1c4f0192></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-1e2a0cc0 data-v-319dd33c data-v-319dd33c><h3 class="title" style="display:none;" data-v-1e2a0cc0 data-v-1e2a0cc0>love</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-1e2a0cc0 data-v-1e2a0cc0><input type="password" value="" data-v-1e2a0cc0> <span data-v-1e2a0cc0>Konck! Knock!</span> <button data-v-1e2a0cc0>OK</button></label> <div class="footer" style="display:none;" data-v-1e2a0cc0 data-v-1e2a0cc0><span data-v-1e2a0cc0><i class="iconfont reco-theme" data-v-1e2a0cc0></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-1e2a0cc0>vuePress-theme-reco</a></span> <span data-v-1e2a0cc0><i class="iconfont reco-copyright" data-v-1e2a0cc0></i> <a data-v-1e2a0cc0><span data-v-1e2a0cc0>love</span>
+            
+          <span data-v-1e2a0cc0>2019 - </span>
+          2020
+        </a></span></div></div> <div class="hide" data-v-319dd33c><header class="navbar" data-v-319dd33c><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.png" alt="love" class="logo"> <span class="site-name">love</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间线
+</a></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="https://www.baidu.com/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-date"></i>
+  导航
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      联系
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/about/" class="nav-link"><i class="iconfont undefined"></i>
+  关于
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-319dd33c></div> <aside class="sidebar" data-v-319dd33c><div class="personal-info-wrapper" data-v-6c8ffc9c><img src="/logo.png" alt="author-avatar" class="personal-img" data-v-6c8ffc9c> <h3 class="name" data-v-6c8ffc9c>
+    love
+  </h3> <div class="num" data-v-6c8ffc9c><div data-v-6c8ffc9c><h3 data-v-6c8ffc9c>4</h3> <h6 data-v-6c8ffc9c>文章</h6></div> <div data-v-6c8ffc9c><h3 data-v-6c8ffc9c>0</h3> <h6 data-v-6c8ffc9c>标签</h6></div></div> <hr data-v-6c8ffc9c></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间线
+</a></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="https://www.baidu.com/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-date"></i>
+  导航
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      联系
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/about/" class="nav-link"><i class="iconfont undefined"></i>
+  关于
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>基础</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/2020/%E5%B0%8F%E6%B5%A3%E7%86%8Acms3.0%E6%96%87%E6%A1%A3.html#基础" class="sidebar-link">基础</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/2020/%E5%B0%8F%E6%B5%A3%E7%86%8Acms3.0%E6%96%87%E6%A1%A3.html#后台操作" class="sidebar-link">后台操作</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/2020/%E5%B0%8F%E6%B5%A3%E7%86%8Acms3.0%E6%96%87%E6%A1%A3.html#api" class="sidebar-link">Api</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/2020/%E5%B0%8F%E6%B5%A3%E7%86%8Acms3.0%E6%96%87%E6%A1%A3.html#章节信息" class="sidebar-link">章节信息</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/2020/%E5%B0%8F%E6%B5%A3%E7%86%8Acms3.0%E6%96%87%E6%A1%A3.html#图片信息" class="sidebar-link">图片信息</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/2020/%E5%B0%8F%E6%B5%A3%E7%86%8Acms3.0%E6%96%87%E6%A1%A3.html#v3接口" class="sidebar-link">v3接口</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/2020/%E5%B0%8F%E6%B5%A3%E7%86%8Acms3.0%E6%96%87%E6%A1%A3.html#v3接口-2" class="sidebar-link">v3接口</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/2020/%E5%B0%8F%E6%B5%A3%E7%86%8Acms3.0%E6%96%87%E6%A1%A3.html#app接口文档" class="sidebar-link">App接口文档</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/2020/%E5%B0%8F%E6%B5%A3%E7%86%8Acms3.0%E6%96%87%E6%A1%A3.html#请求参数" class="sidebar-link">请求参数</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/2020/%E5%B0%8F%E6%B5%A3%E7%86%8Acms3.0%E6%96%87%E6%A1%A3.html#返回数据示例" class="sidebar-link">返回数据示例</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/2020/%E5%B0%8F%E6%B5%A3%E7%86%8Acms3.0%E6%96%87%E6%A1%A3.html#返回数据说明" class="sidebar-link">返回数据说明</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/2020/%E5%B0%8F%E6%B5%A3%E7%86%8Acms3.0%E6%96%87%E6%A1%A3.html#请求参数-2" class="sidebar-link">请求参数</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/2020/%E5%B0%8F%E6%B5%A3%E7%86%8Acms3.0%E6%96%87%E6%A1%A3.html#返回数据示例-2" class="sidebar-link">返回数据示例</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/2020/%E5%B0%8F%E6%B5%A3%E7%86%8Acms3.0%E6%96%87%E6%A1%A3.html#返回数据说明-2" class="sidebar-link">返回数据说明</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/2020/%E5%B0%8F%E6%B5%A3%E7%86%8Acms3.0%E6%96%87%E6%A1%A3.html#请求参数-3" class="sidebar-link">请求参数</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/2020/%E5%B0%8F%E6%B5%A3%E7%86%8Acms3.0%E6%96%87%E6%A1%A3.html#返回数据示例-3" class="sidebar-link">返回数据示例</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/2020/%E5%B0%8F%E6%B5%A3%E7%86%8Acms3.0%E6%96%87%E6%A1%A3.html#返回数据说明-3" class="sidebar-link">返回数据说明</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/2020/%E5%B0%8F%E6%B5%A3%E7%86%8Acms3.0%E6%96%87%E6%A1%A3.html#请求参数-4" class="sidebar-link">请求参数</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/2020/%E5%B0%8F%E6%B5%A3%E7%86%8Acms3.0%E6%96%87%E6%A1%A3.html#返回数据示例-4" class="sidebar-link">返回数据示例</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/2020/%E5%B0%8F%E6%B5%A3%E7%86%8Acms3.0%E6%96%87%E6%A1%A3.html#请求参数-5" class="sidebar-link">请求参数</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/2020/%E5%B0%8F%E6%B5%A3%E7%86%8Acms3.0%E6%96%87%E6%A1%A3.html#返回数据示例-5" class="sidebar-link">返回数据示例</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/2020/%E5%B0%8F%E6%B5%A3%E7%86%8Acms3.0%E6%96%87%E6%A1%A3.html#请求参数-6" class="sidebar-link">请求参数</a></li><li class="sidebar-sub-header"><a href="/2020/%E5%B0%8F%E6%B5%A3%E7%86%8Acms3.0%E6%96%87%E6%A1%A3.html#返回数据" class="sidebar-link">返回数据</a></li><li class="sidebar-sub-header"><a href="/2020/%E5%B0%8F%E6%B5%A3%E7%86%8Acms3.0%E6%96%87%E6%A1%A3.html#返回数据说明-4" class="sidebar-link">返回数据说明</a></li><li class="sidebar-sub-header"><a href="/2020/%E5%B0%8F%E6%B5%A3%E7%86%8Acms3.0%E6%96%87%E6%A1%A3.html#请求参数-7" class="sidebar-link">请求参数</a></li><li class="sidebar-sub-header"><a href="/2020/%E5%B0%8F%E6%B5%A3%E7%86%8Acms3.0%E6%96%87%E6%A1%A3.html#返回数据示例-6" class="sidebar-link">返回数据示例</a></li><li class="sidebar-sub-header"><a href="/2020/%E5%B0%8F%E6%B5%A3%E7%86%8Acms3.0%E6%96%87%E6%A1%A3.html#请求参数-8" class="sidebar-link">请求参数</a></li><li class="sidebar-sub-header"><a href="/2020/%E5%B0%8F%E6%B5%A3%E7%86%8Acms3.0%E6%96%87%E6%A1%A3.html#返回数据示例-7" class="sidebar-link">返回数据示例</a></li><li class="sidebar-sub-header"><a href="/2020/%E5%B0%8F%E6%B5%A3%E7%86%8Acms3.0%E6%96%87%E6%A1%A3.html#请求参数-9" class="sidebar-link">请求参数</a></li><li class="sidebar-sub-header"><a href="/2020/%E5%B0%8F%E6%B5%A3%E7%86%8Acms3.0%E6%96%87%E6%A1%A3.html#请求参数-10" class="sidebar-link">请求参数</a></li></ul></li><li><a href="/2020/%E5%B0%8F%E6%B5%A3%E7%86%8Acms3.0%E6%96%87%E6%A1%A3.html#返回数据说明-5" class="sidebar-link">返回数据说明</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/2020/%E5%B0%8F%E6%B5%A3%E7%86%8Acms3.0%E6%96%87%E6%A1%A3.html#特别说明" class="sidebar-link">特别说明</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/2020/%E5%B0%8F%E6%B5%A3%E7%86%8Acms3.0%E6%96%87%E6%A1%A3.html#post请求参数" class="sidebar-link">post请求参数</a></li><li class="sidebar-sub-header"><a href="/2020/%E5%B0%8F%E6%B5%A3%E7%86%8Acms3.0%E6%96%87%E6%A1%A3.html#返回数据-2" class="sidebar-link">返回数据</a></li></ul></li><li><a href="/2020/%E5%B0%8F%E6%B5%A3%E7%86%8Acms3.0%E6%96%87%E6%A1%A3.html#模板开发文档" class="sidebar-link">模板开发文档</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/2020/%E5%B0%8F%E6%B5%A3%E7%86%8Acms3.0%E6%96%87%E6%A1%A3.html#帮助中心" class="sidebar-link">帮助中心</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/2020/%E5%B0%8F%E6%B5%A3%E7%86%8Acms3.0%E6%96%87%E6%A1%A3.html#sql命令大全" class="sidebar-link">sql命令大全</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-1e2a0cc0 data-v-319dd33c><h3 class="title" style="display:none;" data-v-1e2a0cc0 data-v-1e2a0cc0></h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-1e2a0cc0 data-v-1e2a0cc0><input type="password" value="" data-v-1e2a0cc0> <span data-v-1e2a0cc0>Konck! Knock!</span> <button data-v-1e2a0cc0>OK</button></label> <div class="footer" style="display:none;" data-v-1e2a0cc0 data-v-1e2a0cc0><span data-v-1e2a0cc0><i class="iconfont reco-theme" data-v-1e2a0cc0></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-1e2a0cc0>vuePress-theme-reco</a></span> <span data-v-1e2a0cc0><i class="iconfont reco-copyright" data-v-1e2a0cc0></i> <a data-v-1e2a0cc0><span data-v-1e2a0cc0>love</span>
+            
+          <span data-v-1e2a0cc0>2019 - </span>
+          2020
+        </a></span></div></div> <div data-v-319dd33c><main class="page"><div class="page-title" style="display:none;"><h1>基础</h1> <hr> <div data-v-484a899e><i class="iconfont reco-account" data-v-484a899e><span data-v-484a899e>love</span></i> <!----> <!----> <!----></div></div> <div class="theme-reco-content content__default" style="display:none;"><h2 id="基础"><a href="#基础" class="header-anchor">#</a> 基础</h2> <h4 id="环境要求"><a href="#环境要求" class="header-anchor">#</a> 环境要求</h4> <p>本CMS采用ThinkPHP5.1开发。项目在GitHub地址：<a href="https://github.com/hiliqi/xiaohuanxiong" target="_blank" rel="noopener noreferrer">前往<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>。官方QQ群：780362399</p> <h1 id="环境要求-2"><a href="#环境要求-2" class="header-anchor">#</a> 环境要求</h1> <ul><li>PHP 7.0-7.3</li> <li>MySQL 版本 &gt;= 5.7 <a href="https://www.kancloud.cn/hiliqi/xwx_comic_cms/1352226" target="_blank" rel="noopener noreferrer">如何适应其他版本数据库?<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li>Redis（版本越高越好）</li> <li>PHP的Redis扩展</li></ul> <h4 id="安装"><a href="#安装" class="header-anchor">#</a> 安装</h4> <ul><li>将网站运行目录设置为public目录</li> <li>如果是NGINX，添加以下伪静态规则：</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>if (!-e $request_filename) {  
+    rewrite  ^(.*)$  /index.php?s=/$1  last;
+    break;  
+}  
+rewrite ^/template/(.*).(html)$ 404.html last;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><ul><li>然后运行：你的url/install，即可安装</li> <li>为安全起见，请在安装完成后删除install目录（该目录在public目录下）。</li></ul> <h2 id="后台操作"><a href="#后台操作" class="header-anchor">#</a> 后台操作</h2> <h4 id="基本逻辑"><a href="#基本逻辑" class="header-anchor">#</a> 基本逻辑</h4> <p>后台操作的基本逻辑是：<strong>添加分类</strong>-<strong>添加漫画</strong>-<strong>章节管理</strong>-<strong>图片管理</strong>。</p> <h4 id="添加漫画"><a href="#添加漫画" class="header-anchor">#</a> 添加漫画</h4> <ul><li>后台无法多次添加同名的漫画。</li> <li>漫画可以拥有多个分类，多个分类用|隔开。</li> <li>封面图片只支持jpg格式。</li> <li>漫画新增后，在右侧可以进行章节管理。如果漫画下存在章节，则不能对漫画进行删除操作。</li> <li>章节新增后，在右侧可以进行图片管理。如果章节下存在图片，则不能对图片进行删除操作。</li></ul> <h4 id="图片管理"><a href="#图片管理" class="header-anchor">#</a> 图片管理</h4> <ul><li>可以批量上传图片，一次最多上传20张。假如需要更改最大上传张数，需要在php_ini文件里进行设置。</li> <li>可以删除单张图片，也可以一次性删除章节所有图片。</li> <li>可以修改图片序，也可以插入图片。比如要在序号11和序号12之间插入一章图片，只需要把这张图片的序号设置为11.01（任意小数）即可。</li></ul> <h4 id="其他管理"><a href="#其他管理" class="header-anchor">#</a> 其他管理</h4> <p>系统设置，网站地图，友链设置，熊掌推送设置等等都在这个菜单。</p> <h4 id="章节管理"><a href="#章节管理" class="header-anchor">#</a> 章节管理</h4> <ul><li>章节是有顺序的，如果遗漏了章节，比如在11章和12章之间漏了一章，那么只需要添加一个新章节，章节序设置为11.01（任意小数），这样就在11和12章之间插入了一章，原先的12章变成了13章。</li></ul> <h4 id="轮播管理"><a href="#轮播管理" class="header-anchor">#</a> 轮播管理</h4> <p>轮播字段说明：</p> <ul><li>标题：用来对轮播进行说明，可以展示在轮播图上面</li> <li>封面图：轮播图的封面图地址</li> <li>所属漫画：轮播图属于哪个漫画，即点击该轮播会跳转到哪个漫画</li> <li>排序：如果排序数字为0（或者小于0），则该轮播不参与展示。大于0则展示，并且按排序数字从大到小排序，数字大的优先展示</li></ul> <h2 id="api"><a href="#api" class="header-anchor">#</a> Api</h2> <h4 id="火车头采集"><a href="#火车头采集" class="header-anchor">#</a> 火车头采集</h4> <ul><li>采集api地址示例：http(s)😕/xxx.com/api/write/save。↵- 请求方式：post</li> <li>表单字段及说明：</li></ul> <ol><li>book_name 漫画名</li> <li>nick_name 漫画别名</li> <li>tags 分类，多个分类用|隔开</li> <li>author 作者名字</li> <li>end 状态，1代表完结，0代表连载中</li> <li>cover_url 封面图远程地址</li> <li>chapter_name 章节名</li> <li>area_id 地区id</li> <li>images 由图片标签组成的字符串，示例：</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;img src=&quot;http://www.m.com/1.jpg&quot;&gt;&lt;img src=&quot;http://www.m.com/2.jpg&quot;&gt;&lt;img src=&quot;http://www.m.com/3.jpg&quot;&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ol start="10"><li>chapter_order 章节序</li> <li>summary 漫画简介</li> <li>api_key 后台配置的api_key</li> <li>src 用来区别采集源，自己写</li> <li>src_url 用来唯一定义每个漫画，可以是该漫画的url，也可以是该漫画在被采集站的id</li> <li>c_src_url 用来唯一定义每个章节，与src_url同理</li></ol> <p>采集需要一个采集数据库，类型是MySQL，以下是建表sql：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>DROP TABLE IF EXISTS `booklogs`;
+CREATE TABLE `booklogs` (
+    `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+    `book_id` int(10) unsigned NOT NULL DEFAULT '0',
+    `src_url` varchar(500) NOT NULL DEFAULT '',
+    `src` varchar(32) NOT NULL DEFAULT '',
+    PRIMARY KEY (`id`),
+    KEY `src_url` (`src_url`) USING BTREE,
+    KEY `src` (`src`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  
+DROP TABLE IF EXISTS `chapterlogs`;
+CREATE TABLE `chapterlogs` (
+    `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+    `book_id` int(10) unsigned NOT NULL DEFAULT '0',
+    `chapter_id` int(10) unsigned NOT NULL DEFAULT '0',
+    `c_src_url` varchar(500) NOT NULL DEFAULT '',
+    PRIMARY KEY (`id`),
+    KEY `c_src_url` (`c_src_url`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><p>建好采集数据库之后，需要到application/api/write.php里配置自己的数据库连接等信息</p> <h4 id="开放数据"><a href="#开放数据" class="header-anchor">#</a> 开放数据</h4> <ul><li>请求地址：/api/read/book</li> <li>请求方式：GET</li> <li>参数</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>page：第几页
+size：每页多少本漫画
+api_key：api密钥
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><ul><li>响应结果示例</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+    &quot;err&quot;: 0,
+    &quot;books&quot;: [
+        {
+            &quot;id&quot;: 1,
+            &quot;book_name&quot;: &quot;Happening&quot;,
+            &quot;nick_name&quot;: null,
+            &quot;create_time&quot;: 1551358877,
+            &quot;update_time&quot;: 1551358877,
+            &quot;tags&quot;: &quot;奇幻|末世&quot;,
+            &quot;summary&quot;: &quot;\&quot;全身开始变红的人们....\n某天开始迅速恶化.......这到底是怎么了？\&quot;&quot;,
+            &quot;end&quot;: 0,
+            &quot;author_id&quot;: 1,
+            &quot;src&quot;: &quot;xqmanhua&quot;,
+            &quot;cover_url&quot;: &quot;&quot;,
+            &quot;start_pay&quot;: 99999,
+            &quot;money&quot;: &quot;0.00&quot;
+        },
+        {
+            &quot;id&quot;: 2,
+            &quot;book_name&quot;: &quot;纯纯的友谊&quot;,
+            &quot;nick_name&quot;: null,
+            &quot;create_time&quot;: 1551359958,
+            &quot;update_time&quot;: 1551359958,
+            &quot;tags&quot;: &quot;恋爱&quot;,
+            &quot;summary&quot;: &quot;哎我问你喔...你是否曾经一边想著我...一边做那种事...?多年同窗好友，我们之间...一直有个「秘密游戏」。&quot;,
+            &quot;end&quot;: 0,
+            &quot;author_id&quot;: 1,
+            &quot;src&quot;: &quot;c1060.f28014.cn&quot;,
+            &quot;cover_url&quot;: &quot;&quot;,  
+            &quot;start_pay&quot;: 99999,
+            &quot;money&quot;: &quot;0.00&quot;
+        }
+    ]
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br></div></div><h2 id="章节信息"><a href="#章节信息" class="header-anchor">#</a> 章节信息</h2> <ul><li>请求地址：http://hm.com/api/read/chapter</li> <li>请求方式：GET</li> <li>参数</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>bid：漫画id
+api_key：api密钥
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ul><li>响应结果示例：</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+    &quot;err&quot;: 0,
+    &quot;chapters&quot;: [
+        {
+            &quot;id&quot;: 1,
+            &quot;chapter_name&quot;: &quot;第1话 &quot;,
+            &quot;create_time&quot;: 1551358877,
+            &quot;update_time&quot;: 1551358877,
+            &quot;book_id&quot;: 1,
+            &quot;order&quot;: &quot;1.00&quot;
+        },
+        {
+            &quot;id&quot;: 2,
+            &quot;chapter_name&quot;: &quot;第2话 &quot;,
+            &quot;create_time&quot;: 1551358889,
+            &quot;update_time&quot;: 1551358889,
+            &quot;book_id&quot;: 1,
+            &quot;order&quot;: &quot;2.00&quot;
+        }
+    ]
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><h2 id="图片信息"><a href="#图片信息" class="header-anchor">#</a> 图片信息</h2> <ul><li>请求地址：http://hm.com/api/read/pic</li> <li>请求方式：GET</li> <li>参数</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>cid：章节id
+api_key：api密钥
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>响应示例：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+    &quot;err&quot;: 0,
+    &quot;pics&quot;: [
+        {
+            &quot;id&quot;: 1,
+            &quot;chapter_id&quot;: 1,
+            &quot;create_time&quot;: 1551358877,
+            &quot;update_time&quot;: 1551358877,
+            &quot;order&quot;: &quot;1.00&quot;,
+            &quot;img_url&quot;: &quot;&quot;
+        },
+        {
+            &quot;id&quot;: 2,
+            &quot;chapter_id&quot;: 1,
+            &quot;create_time&quot;: 1551358877,
+            &quot;update_time&quot;: 1551358877,
+            &quot;order&quot;: &quot;2.00&quot;,
+            &quot;img_url&quot;: &quot;&quot;
+        }
+    ]
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><h4 id="清理缓存"><a href="#清理缓存" class="header-anchor">#</a> 清理缓存</h4> <ul><li>api地址：/api/common/clearcache</li> <li>示例：http://www.xxx.com/api/common/clearcache?api_key=47bce5c74f589f4867dbd57e9ca9f808</li></ul> <p>可以使用宝塔做个计划任务，定时请求这个api，定时清理缓存。</p> <h4 id="点击数同步"><a href="#点击数同步" class="header-anchor">#</a> 点击数同步</h4> <h2 id="v3接口"><a href="#v3接口" class="header-anchor">#</a> v3接口</h2> <ul><li>api地址：/api/common/sycnclicks。</li> <li>参数：date，如'2019-07-19'。如果不传递该参数，则api会自动取得昨天的日期，进行同步，这样方便做定时任务，比如设置凌晨1点同步昨天一天的点击数进数据库。</li> <li>参数：api_key，即后台配置的api_key</li> <li>有需要手动同步点击数的，这里给出示例：</li></ul> <blockquote><p>http://域名/api/common/sycnclicks?date=2019-07-19&amp;api_key=hahaha
+在浏览器输入这个链接，即可以将2019年7月19号这天的点击数同步进MySQL，注意，同一天的点击数只能同步一次，否则会重复。所以建议在这一天结束时进行同步最合理</p></blockquote> <h4 id="批量生成vip码"><a href="#批量生成vip码" class="header-anchor">#</a> 批量生成vip码</h4> <ul><li>api地址：/api/common/genvipcode</li> <li>参数：api_key，即后台配置的api_key</li> <li>先在后台vip码管理-vip设置，设置好相应参数，然后再调用接口批量生成。可以在vip码管理-vip管理页面手动点按钮调用接口，也可以用定时任务，定时请求接口。</li></ul> <h4 id="新建后台管理员"><a href="#新建后台管理员" class="header-anchor">#</a> 新建后台管理员</h4> <ul><li>api地址：/api/common/resetpwd</li> <li>参数：</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>api_key：在config/site.php里配置
+salt：在config/site.php里配置
+username：新用户名
+password：新密码
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>为了绝对安全，在不需要该接口的时候，可以到application/api/common文件，将resetpwd()这个方法全部注释掉。</p> <h4 id="自动生成站点地图"><a href="#自动生成站点地图" class="header-anchor">#</a> 自动生成站点地图</h4> <h2 id="v3接口-2"><a href="#v3接口-2" class="header-anchor">#</a> v3接口</h2> <ul><li>api地址：/api/sitemap/gen</li> <li>参数：</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>api_key：在config/site.php里配置
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id="app接口文档"><a href="#app接口文档" class="header-anchor">#</a> App接口文档</h2> <h4 id="接口校验说明"><a href="#接口校验说明" class="header-anchor">#</a> 接口校验说明</h4> <p>接口校验约定：在请求接口的时候，必须带上两个参数，第一个是时间戳（精确到秒），第二个是token。
+token是由api_key加上时间戳，计算出32位的md5值。
+app_key在后端配置好，app端和后端要约定好相同的app_key。
+示例请求：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>http://域名/app/index/index?token=bf804c5423c2e77d83ee24688c69df64&amp;time=1561529814
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h4 id="最新漫画榜接口"><a href="#最新漫画榜接口" class="header-anchor">#</a> 最新漫画榜接口</h4> <p>请求地址：/app/books/getNewest</p> <h2 id="请求参数"><a href="#请求参数" class="header-anchor">#</a> 请求参数</h2> <ul><li>time：精确到秒</li> <li>token：api_key和时间戳拼接后的32位md5值</li></ul> <h2 id="返回数据示例"><a href="#返回数据示例" class="header-anchor">#</a> 返回数据示例</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+    &quot;success&quot;: 1,
+    &quot;newest&quot;: [
+        {
+            &quot;id&quot;: 6,
+            &quot;book_name&quot;: &quot;霸道狐狸羞羞兔&quot;,
+            &quot;nick_name&quot;: &quot;&quot;,
+            &quot;create_time&quot;: 1561522697,
+            &quot;update_time&quot;: 1561522697,
+            &quot;last_time&quot;: 1561522767,
+            &quot;tags&quot;: &quot;恋爱|都市|生活&quot;,
+            &quot;summary&quot;: &quot;【独家/每周五更新】现代社会中，生活着隐藏身份的月兔一家人，有爸爸和一双儿女。他们除了要融入普通人的日常，工作、学习、恋爱，还要应付来自天敌——狐狸家族的各种威胁。&quot;,
+            &quot;end&quot;: 1,
+            &quot;author_id&quot;: 1,
+            &quot;author_name&quot;: &quot;佚名&quot;,
+            &quot;cover_url&quot;: &quot;&quot;,
+            &quot;start_pay&quot;: 99999,
+            &quot;money&quot;: &quot;0.00&quot;,
+            &quot;area_id&quot;: 1,
+            &quot;chapter_count&quot;: 1,
+            &quot;taglist&quot;: [
+                &quot;恋爱&quot;,
+                &quot;都市&quot;,
+                &quot;生活&quot;
+            ],
+            &quot;author&quot;: {
+                &quot;id&quot;: 1,
+                &quot;author_name&quot;: &quot;鲁迅&quot;,
+                &quot;create_time&quot;: 1561199876,
+                &quot;update_time&quot;: 1561199876
+            },
+            &quot;chapters&quot;: [
+                {
+                    &quot;id&quot;: 8,
+                    &quot;chapter_name&quot;: &quot;预告&quot;,
+                    &quot;create_time&quot;: 1561522767,
+                    &quot;update_time&quot;: 1561522767,
+                    &quot;book_id&quot;: 6,
+                    &quot;chapter_order&quot;: &quot;0.00&quot;
+                }
+            ]
+        },
+        {
+            &quot;id&quot;: 5,
+            &quot;book_name&quot;: &quot;假冒身份&quot;,
+            &quot;nick_name&quot;: &quot;&quot;,
+            &quot;create_time&quot;: 1561201403,
+            &quot;update_time&quot;: 1561201403,
+            &quot;last_time&quot;: 1561201613,
+            &quot;tags&quot;: &quot;都市&quot;,
+            &quot;summary&quot;: &quot;\n\t\t \t一个神秘的旅客坐上了我的车，他遗留下的钱包里，身份证上的那个男人居然长得跟我一模一样？...\n\t\t\t&quot;,
+            &quot;end&quot;: 0,
+            &quot;author_id&quot;: 3,
+            &quot;author_name&quot;: &quot;佚名&quot;,
+            &quot;cover_url&quot;: &quot;&quot;,
+            &quot;start_pay&quot;: 99999,
+            &quot;money&quot;: &quot;0.00&quot;,
+            &quot;area_id&quot;: 1,
+            &quot;chapter_count&quot;: 1,
+            &quot;taglist&quot;: [
+                &quot;都市&quot;
+            ],
+            &quot;author&quot;: {
+                &quot;id&quot;: 3,
+                &quot;author_name&quot;: &quot;ZQ&quot;,
+                &quot;create_time&quot;: 1561201403,
+                &quot;update_time&quot;: 1561201403
+            },
+            &quot;chapters&quot;: [
+                {
+                    &quot;id&quot;: 7,
+                    &quot;chapter_name&quot;: &quot; 第1话  &quot;,
+                    &quot;create_time&quot;: 1561201613,
+                    &quot;update_time&quot;: 1561201613,
+                    &quot;book_id&quot;: 5,
+                    &quot;chapter_order&quot;: &quot;0.00&quot;
+                }
+            ]
+        }
+    ]
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br></div></div><h2 id="返回数据说明"><a href="#返回数据说明" class="header-anchor">#</a> 返回数据说明</h2> <ul><li>chapters: 章节数据</li> <li>nick_name: 漫画别名</li> <li>last_time: 漫画更新时间</li> <li>tags: 漫画分类</li> <li>summary: 漫画简介</li> <li>end: 连载还是完结，0为连载</li> <li>cover_url: 漫画封面url，为空则用默认路径（见其他说明-图片及文件路径说明)</li> <li>start_pay: 漫画起始付费章节</li> <li>money: 单章价格</li></ul> <h4 id="搜索接口"><a href="#搜索接口" class="header-anchor">#</a> 搜索接口</h4> <p>搜索接口请求地址：/app/books/search</p> <h2 id="请求参数-2"><a href="#请求参数-2" class="header-anchor">#</a> 请求参数</h2> <ul><li>time：精确到秒</li> <li>token：api_key和时间戳拼接后的32位md5值</li> <li>keyword：搜索关键字</li></ul> <h2 id="返回数据示例-2"><a href="#返回数据示例-2" class="header-anchor">#</a> 返回数据示例</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+    &quot;success&quot;: 1,
+    &quot;data&quot;: {
+        &quot;books&quot;: [
+            {
+                &quot;id&quot;: 2,
+                &quot;book_name&quot;: &quot;霸道狐狸羞羞兔&quot;,
+                &quot;nick_name&quot;: &quot;&quot;,
+                &quot;create_time&quot;: 1561198229,
+                &quot;update_time&quot;: 1561198229,
+                &quot;last_time&quot;: 1561198897,
+                &quot;tags&quot;: &quot;恋爱|都市|生活&quot;,
+                &quot;summary&quot;: &quot;【独家/每周五更新】现代社会中，生活着隐藏身份的月兔一家人，有爸爸和一双儿女。他们除了要融入普通人的日常，工作、学习、恋爱，还要应付来自天敌——狐狸家族的各种威胁。&quot;,
+                &quot;end&quot;: 1,
+                &quot;author_id&quot;: 1,
+                &quot;author_name&quot;: &quot;佚名&quot;,
+                &quot;cover_url&quot;: &quot;&quot;,
+                &quot;start_pay&quot;: 99999,
+                &quot;money&quot;: &quot;0.00&quot;,
+                &quot;area_id&quot;: 1,
+                &quot;author&quot;: {
+                    &quot;id&quot;: 1,
+                    &quot;author_name&quot;: &quot;岸本&quot;,
+                    &quot;create_time&quot;: 1561199876,
+                    &quot;update_time&quot;: 1561199876
+                }
+            },
+            {
+                &quot;id&quot;: 6,
+                &quot;book_name&quot;: &quot;霸道狐狸羞羞兔&quot;,
+                &quot;nick_name&quot;: &quot;&quot;,
+                &quot;create_time&quot;: 1561522697,
+                &quot;update_time&quot;: 1561522697,
+                &quot;last_time&quot;: 1561522767,
+                &quot;tags&quot;: &quot;恋爱|都市|生活&quot;,
+                &quot;summary&quot;: &quot;【独家/每周五更新】现代社会中，生活着隐藏身份的月兔一家人，有爸爸和一双儿女。他们除了要融入普通人的日常，工作、学习、恋爱，还要应付来自天敌——狐狸家族的各种威胁。&quot;,
+                &quot;end&quot;: 1,
+                &quot;author_id&quot;: 1,
+                &quot;author_name&quot;: &quot;佚名&quot;,
+                &quot;cover_url&quot;: &quot;&quot;,
+                &quot;start_pay&quot;: 99999,
+                &quot;money&quot;: &quot;0.00&quot;,
+                &quot;area_id&quot;: 1,
+                &quot;author&quot;: {
+                    &quot;id&quot;: 1,
+                    &quot;author_name&quot;: &quot;鸟山明&quot;,
+                    &quot;create_time&quot;: 1561199876,
+                    &quot;update_time&quot;: 1561199876
+                }
+            }
+        ],
+        &quot;count&quot;: 2,
+        &quot;hot_search&quot;: [
+            &quot;dddd&quot;,
+            &quot;阴路&quot;,
+            &quot;漂亮&quot;,
+            &quot;HWAN&quot;
+        ]
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br></div></div><h2 id="返回数据说明-2"><a href="#返回数据说明-2" class="header-anchor">#</a> 返回数据说明</h2> <ul><li>books: 搜索漫画列表</li> <li>hot_search: 热门搜索词</li> <li>count: 搜索结果数</li></ul> <h4 id="漫画详情接口"><a href="#漫画详情接口" class="header-anchor">#</a> 漫画详情接口</h4> <p>请求地址：/app/books/getNewest</p> <h2 id="请求参数-3"><a href="#请求参数-3" class="header-anchor">#</a> 请求参数</h2> <ul><li>time：精确到秒</li> <li>token：api_key和时间戳拼接后的32位md5值</li></ul> <h2 id="返回数据示例-3"><a href="#返回数据示例-3" class="header-anchor">#</a> 返回数据示例</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+    &quot;success&quot;: 1,
+    &quot;newest&quot;: [
+        {
+        &quot;id&quot;: 6,
+        &quot;book_name&quot;: &quot;霸道狐狸羞羞兔&quot;,
+        &quot;nick_name&quot;: &quot;&quot;,
+        &quot;create_time&quot;: 1561522697,
+        &quot;update_time&quot;: 1561522697,
+        &quot;last_time&quot;: 1561522767,
+        &quot;tags&quot;: &quot;恋爱|都市|生活&quot;,
+        &quot;summary&quot;: &quot;【独家/每周五更新】现代社会中，生活着隐藏身份的月兔一家人，有爸爸和一双儿女。他们除了要融入普通人的日常，工作、学习、恋爱，还要应付来自天敌——狐狸家族的各种威胁。&quot;,
+        &quot;end&quot;: 1,
+        &quot;author_id&quot;: 1,
+        &quot;author_name&quot;: &quot;佚名&quot;,
+        &quot;cover_url&quot;: &quot;&quot;,
+        &quot;start_pay&quot;: 99999,
+        &quot;money&quot;: &quot;0.00&quot;,
+        &quot;area_id&quot;: 1,
+        &quot;chapter_count&quot;: 1,
+        &quot;taglist&quot;: [
+            &quot;恋爱&quot;,
+            &quot;都市&quot;,
+            &quot;生活&quot;
+        ],
+        &quot;author&quot;: {
+            &quot;id&quot;: 1,
+            &quot;author_name&quot;: &quot;鲁迅&quot;,
+            &quot;create_time&quot;: 1561199876,
+            &quot;update_time&quot;: 1561199876
+        },
+        &quot;chapters&quot;: [
+            {
+                &quot;id&quot;: 8,
+                &quot;chapter_name&quot;: &quot;预告&quot;,
+                &quot;create_time&quot;: 1561522767,
+                &quot;update_time&quot;: 1561522767,
+                &quot;book_id&quot;: 6,
+                &quot;chapter_order&quot;: &quot;0.00&quot;
+            }
+        ]
+        },
+        {
+            &quot;id&quot;: 5,
+            &quot;book_name&quot;: &quot;假冒身份&quot;,
+            &quot;nick_name&quot;: &quot;&quot;,
+            &quot;create_time&quot;: 1561201403,
+            &quot;update_time&quot;: 1561201403,
+            &quot;last_time&quot;: 1561201613,
+            &quot;tags&quot;: &quot;都市&quot;,
+            &quot;summary&quot;: &quot;\n\t\t \t一个神秘的旅客坐上了我的车，他遗留下的钱包里，身份证上的那个男人居然长得跟我一模一样？...\n\t\t\t&quot;,
+            &quot;end&quot;: 0,
+            &quot;author_id&quot;: 3,
+            &quot;author_name&quot;: &quot;佚名&quot;,
+            &quot;cover_url&quot;: &quot;&quot;,
+            &quot;start_pay&quot;: 99999,
+            &quot;money&quot;: &quot;0.00&quot;,
+            &quot;area_id&quot;: 1,
+            &quot;chapter_count&quot;: 1,
+            &quot;taglist&quot;: [
+                &quot;都市&quot;
+            ],
+            &quot;author&quot;: {
+                &quot;id&quot;: 3,
+                &quot;author_name&quot;: &quot;ZQ&quot;,
+                &quot;create_time&quot;: 1561201403,
+                &quot;update_time&quot;: 1561201403
+            },
+            &quot;chapters&quot;: [
+                {
+                    &quot;id&quot;: 7,
+                    &quot;chapter_name&quot;: &quot; 第1话  &quot;,
+                    &quot;create_time&quot;: 1561201613,
+                    &quot;update_time&quot;: 1561201613,
+                    &quot;book_id&quot;: 5,
+                    &quot;chapter_order&quot;: &quot;0.00&quot;
+                }
+            ]
+        }
+    ]
+}              
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br></div></div><h2 id="返回数据说明-3"><a href="#返回数据说明-3" class="header-anchor">#</a> 返回数据说明</h2> <ul><li>chapters: 章节数据</li> <li>nick_name: 漫画别名</li> <li>last_time: 漫画更新时间</li> <li>tags: 漫画分类</li> <li>summary: 漫画简介</li> <li>end: 连载还是完结，0为连载</li> <li>cover_url: 漫画封面url，为空则用默认路径（见其他说明-图片及文件路径说明)</li> <li>start_pay: 漫画起始付费章节</li> <li>money: 单章价格</li></ul> <h4 id="热门漫画榜接口"><a href="#热门漫画榜接口" class="header-anchor">#</a> 热门漫画榜接口</h4> <p>请求地址：/app/books/getHot</p> <h2 id="请求参数-4"><a href="#请求参数-4" class="header-anchor">#</a> 请求参数</h2> <ul><li>time：精确到秒</li> <li>token：api_key和时间戳拼接后的32位md5值</li></ul> <h2 id="返回数据示例-4"><a href="#返回数据示例-4" class="header-anchor">#</a> 返回数据示例</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+    &quot;success&quot;: 1,
+    &quot;hot&quot;: [
+        {
+            &quot;id&quot;: 4,
+            &quot;book_name&quot;: &quot;驯服小姨子&quot;,
+            &quot;cover_url&quot;: &quot;&quot;,
+            &quot;last_time&quot;: 1559745194,
+            &quot;chapter_count&quot;: 0,
+            &quot;summary&quot;: &quot;身材姣好的貌美妻子，加上含苞待放20岁小姨子的双重诱惑，姊妹丼的滋味你嚐过吗?&quot;,
+            &quot;area&quot;: null,
+            &quot;author&quot;: {
+                &quot;id&quot;: 4,
+                &quot;author_name&quot;: &quot;FACON&quot;,
+                &quot;create_time&quot;: 1559745194,
+                &quot;update_time&quot;: 1559745194
+            },
+            &quot;taglist&quot;: [
+                &quot;剧情&quot;,
+                &quot;浪漫爱情&quot;
+            ]
+        }
+    ]
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div><h4 id="完结漫画榜接口"><a href="#完结漫画榜接口" class="header-anchor">#</a> 完结漫画榜接口</h4> <p>请求地址：/app/books/getEnds</p> <h2 id="请求参数-5"><a href="#请求参数-5" class="header-anchor">#</a> 请求参数</h2> <ul><li>time：精确到秒</li> <li>token：api_key和时间戳拼接后的32位md5值</li></ul> <h2 id="返回数据示例-5"><a href="#返回数据示例-5" class="header-anchor">#</a> 返回数据示例</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+    &quot;success&quot;: 1,
+    &quot;ends&quot;: [
+        {
+            &quot;id&quot;: 6,
+            &quot;book_name&quot;: &quot;霸道狐狸羞羞兔&quot;,
+            &quot;nick_name&quot;: &quot;&quot;,
+            &quot;create_time&quot;: 1561522697,
+            &quot;update_time&quot;: 1561522697,
+            &quot;last_time&quot;: 1561522767,
+            &quot;tags&quot;: &quot;恋爱|都市|生活&quot;,
+            &quot;summary&quot;: &quot;【独家/每周五更新】现代社会中，生活着隐藏身份的月兔一家人，有爸爸和一双儿女。他们除了要融入普通人的日常，工作、学习、恋爱，还要应付来自天敌——狐狸家族的各种威胁。&quot;,
+            &quot;end&quot;: 1,
+            &quot;author_id&quot;: 1,
+            &quot;author_name&quot;: &quot;佚名&quot;,
+            &quot;cover_url&quot;: &quot;&quot;,
+            &quot;start_pay&quot;: 99999,
+            &quot;money&quot;: &quot;0.00&quot;,
+            &quot;area_id&quot;: 1,
+            &quot;chapter_count&quot;: 1,
+            &quot;taglist&quot;: [
+                &quot;恋爱&quot;,
+                &quot;都市&quot;,
+                &quot;生活&quot;
+            ],
+            &quot;author&quot;: {
+                &quot;id&quot;: 1,
+                &quot;author_name&quot;: &quot;鲁迅&quot;,
+                &quot;create_time&quot;: 1561199876,
+                &quot;update_time&quot;: 1561199876
+            },
+            &quot;chapters&quot;: [
+                {
+                    &quot;id&quot;: 8,
+                    &quot;chapter_name&quot;: &quot;预告&quot;,
+                    &quot;create_time&quot;: 1561522767,
+                    &quot;update_time&quot;: 1561522767,
+                    &quot;book_id&quot;: 6,
+                    &quot;chapter_order&quot;: &quot;0.00&quot;
+                }
+            ]
+        },
+        {
+            &quot;id&quot;: 5,
+            &quot;book_name&quot;: &quot;假冒身份&quot;,
+            &quot;nick_name&quot;: &quot;&quot;,
+            &quot;create_time&quot;: 1561201403,
+            &quot;update_time&quot;: 1561201403,
+            &quot;last_time&quot;: 1561201613,
+            &quot;tags&quot;: &quot;都市&quot;,
+            &quot;summary&quot;: &quot;\n\t\t \t一个神秘的旅客坐上了我的车，他遗留下的钱包里，身份证上的那个男人居然长得跟我一模一样？...\n\t\t\t&quot;,
+            &quot;end&quot;: 0,
+            &quot;author_id&quot;: 3,
+            &quot;author_name&quot;: &quot;佚名&quot;,
+            &quot;cover_url&quot;: &quot;&quot;,
+            &quot;start_pay&quot;: 99999,
+            &quot;money&quot;: &quot;0.00&quot;,
+            &quot;area_id&quot;: 1,
+            &quot;chapter_count&quot;: 1,
+            &quot;taglist&quot;: [
+                &quot;都市&quot;
+            ],
+            &quot;author&quot;: {
+                &quot;id&quot;: 3,
+                &quot;author_name&quot;: &quot;ZQ&quot;,
+                &quot;create_time&quot;: 1561201403,
+                &quot;update_time&quot;: 1561201403
+            },
+            &quot;chapters&quot;: [
+                {
+                    &quot;id&quot;: 7,
+                    &quot;chapter_name&quot;: &quot; 第1话  &quot;,
+                    &quot;create_time&quot;: 1561201613,
+                    &quot;update_time&quot;: 1561201613,
+                    &quot;book_id&quot;: 5,
+                    &quot;chapter_order&quot;: &quot;0.00&quot;
+                }
+            ]
+        }
+    ]
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br></div></div><h4 id="漫画收藏获取接口"><a href="#漫画收藏获取接口" class="header-anchor">#</a> 漫画收藏获取接口</h4> <p>请求地址：/app/users/isfavor</p> <h3 id="请求参数-6"><a href="#请求参数-6" class="header-anchor">#</a> 请求参数</h3> <ul><li>time：精确到秒</li> <li>token：api_key和时间戳拼接后的32位md5值</li> <li>book_id: 漫画id</li> <li>utoken：用户token</li></ul> <h3 id="返回数据"><a href="#返回数据" class="header-anchor">#</a> 返回数据</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+    &quot;success&quot;: 1,
+    &quot;isfavor&quot;: 1
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h3 id="返回数据说明-4"><a href="#返回数据说明-4" class="header-anchor">#</a> 返回数据说明</h3> <p>isfavor: 表示是否收藏。1为是，0为否。</p> <h4 id="漫画评论接口"><a href="#漫画评论接口" class="header-anchor">#</a> 漫画评论接口</h4> <p>请求地址：/app/books/getComments</p> <h3 id="请求参数-7"><a href="#请求参数-7" class="header-anchor">#</a> 请求参数</h3> <ul><li>time：精确到秒</li> <li>token：api_key和时间戳拼接后的32位md5值</li> <li>book_id: 漫画id</li></ul> <h3 id="返回数据示例-6"><a href="#返回数据示例-6" class="header-anchor">#</a> 返回数据示例</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+    &quot;success&quot;: 1,
+    &quot;comments&quot;: [
+        {&quot;id&quot;: 1,&quot;user_id&quot;: 4,&quot;book_id&quot;: 6,&quot;create_time&quot;: 1561618213,&quot;update_time&quot;: 1561618213,&quot;content&quot;: &quot;好好看看啊！&quot;}
+    ]
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h4 id="分类接口"><a href="#分类接口" class="header-anchor">#</a> 分类接口</h4> <p>请求地址：/app/tags/getList</p> <h3 id="请求参数-8"><a href="#请求参数-8" class="header-anchor">#</a> 请求参数</h3> <ul><li>time：精确到秒</li> <li>token：api_key和时间戳拼接后的32位md5值</li></ul> <h3 id="返回数据示例-7"><a href="#返回数据示例-7" class="header-anchor">#</a> 返回数据示例</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+    &quot;success&quot;: 1,
+    &quot;tags&quot;: [
+        {&quot;id&quot;: 1,&quot;tag_name&quot;: &quot;恐怖&quot;,&quot;create_time&quot;: 1561699953,&quot;update_time&quot;: 1561699953},{&quot;id&quot;: 2,&quot;tag_name&quot;: &quot;校园&quot;,&quot;create_time&quot;: 1561699962,&quot;update_time&quot;: 1561699962}
+    ]
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h4 id="章节列表接口"><a href="#章节列表接口" class="header-anchor">#</a> 章节列表接口</h4> <p>请求地址：/app/chapters/getList</p> <h3 id="请求参数-9"><a href="#请求参数-9" class="header-anchor">#</a> 请求参数</h3> <ul><li>time：精确到秒</li> <li>token：api_key和时间戳拼接后的32位md5值</li> <li>book_id: 漫画id↵↵### 返回数据示例</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+    &quot;success&quot;: 1,
+    &quot;chapters&quot;: [
+        {&quot;id&quot;: 1,&quot;chapter_name&quot;: &quot;第1话 短信(1)&quot;,&quot;create_time&quot;: 1560939631,&quot;update_time&quot;: 1560939631,&quot;book_id&quot;: 1,&quot;chapter_order&quot;: &quot;1.00&quot;},
+        {&quot;id&quot;: 2,&quot;chapter_name&quot;: &quot;第2话 短信(2)&quot;,&quot;create_time&quot;: 1560939633,&quot;update_time&quot;: 1560939633,&quot;book_id&quot;: 1,&quot;chapter_order&quot;: &quot;2.00&quot;}
+    ]
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>https://www.kancloud.cn/hiliqi/xwx_comic_cms/1148682</p> <h4 id="章节详情接口"><a href="#章节详情接口" class="header-anchor">#</a> 章节详情接口</h4> <p>请求地址：/app/chapters/detail</p> <h3 id="请求参数-10"><a href="#请求参数-10" class="header-anchor">#</a> 请求参数</h3> <ul><li>time：精确到秒</li> <li>token：api_key和时间戳拼接后的32位md5值</li> <li>id: 章节id↵↵### 返回数据示例</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+    &quot;success&quot;: 1,
+    &quot;chapter&quot;: {
+        &quot;id&quot;: 1,
+        &quot;chapter_name&quot;: &quot;第1话&quot;,
+        &quot;create_time&quot;: 1562565159,
+        &quot;update_time&quot;: 1562565159,
+        &quot;book_id&quot;: 1,
+        &quot;chapter_order&quot;: &quot;0.00&quot;,
+        &quot;prev&quot;: [],
+        &quot;next&quot;: {
+            &quot;id&quot;: 2,
+            &quot;chapter_name&quot;: &quot;第2话&quot;,
+            &quot;create_time&quot;: 1562565181,
+            &quot;update_time&quot;: 1562565181,
+            &quot;book_id&quot;: 1,
+            &quot;chapter_order&quot;: &quot;1.00&quot;
+        },
+        &quot;photos&quot;: [
+            {
+                &quot;id&quot;: 1,
+                &quot;chapter_id&quot;: 1,
+                &quot;create_time&quot;: 1562565160,
+                &quot;update_time&quot;: 1562565160,
+                &quot;pic_order&quot;: &quot;1.00&quot;,
+                &quot;img_url&quot;: &quot;&quot;
+            }
+        ],
+        &quot;book&quot;: {
+            &quot;id&quot;: 1,
+            &quot;book_name&quot;: &quot;神精榜&quot;,
+            &quot;nick_name&quot;: &quot;&quot;,
+            &quot;create_time&quot;: 1562565157,
+            &quot;update_time&quot;: 1562565157,
+            &quot;last_time&quot;: 1562574370,
+            &quot;tags&quot;: &quot;搞笑|玄幻|热血&quot;,
+            &quot;summary&quot;: &quot;神仙学校下凡招生，有“心”眼的孩子将被选到“聚精汇神”庠（简称“神庠”）接受仙术教导！ 黑包公担任教导主任，嫦娥JJ竟然是班主任？！神仙荟萃，鬼马精灵。二郎神的儿子，阎王爷的公子，梦之神的千金……还有一个来自凡人世界的淘气小孩儿陈小琥。 离奇的故事，逗乐的阵容，谱写一段仙界的崛起传奇！                 &quot;,
+            &quot;end&quot;: 1,
+            &quot;author_id&quot;: 1,
+            &quot;author_name&quot;: &quot;佚名&quot;,
+            &quot;cover_url&quot;: &quot;&quot;,
+            &quot;start_pay&quot;: 99999,
+            &quot;money&quot;: &quot;0.00&quot;,
+            &quot;area_id&quot;: 1
+        }
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br></div></div><h2 id="返回数据说明-5"><a href="#返回数据说明-5" class="header-anchor">#</a> 返回数据说明</h2> <ul><li>pic_order：图片序</li> <li>img_url: 图片url，为空则用默认路径</li> <li>prev: 上一章数据</li> <li>next: 下一章数据</li></ul> <h2 id="特别说明"><a href="#特别说明" class="header-anchor">#</a> 特别说明</h2> <p>本接口会对登录用户做一个校验，如果已登录，则校验用户是否vip，如果不是vip，则校验用户是否购买了本章节，如果购买了本章节，则顺利阅读，否则返回以下数据：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+    &quot;success&quot;: 0,
+    &quot;msg&quot;: &quot;没有购买此章节&quot;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h4 id="用户注册接口"><a href="#用户注册接口" class="header-anchor">#</a> 用户注册接口</h4> <p>请求地址：/app/account/register，分为get请求和post请求</p> <h3 id="post请求参数"><a href="#post请求参数" class="header-anchor">#</a> post请求参数</h3> <ul><li>时间戳：精确到秒</li> <li>token：api_key和时间戳拼接后的32位md5值</li> <li>username: 用户名</li> <li>password: 密码</li> <li>pid: 推荐人id（可为空）</li></ul> <h3 id="返回数据-2"><a href="#返回数据-2" class="header-anchor">#</a> 返回数据</h3> <ul><li>如果验证码错误，则返回</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+    &quot;success&quot;: 0,
+    &quot;msg&quot;: &quot;验证码错误&quot;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><ul><li>如果同一个ip进行暴力注册，则返回</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+    &quot;success&quot;: 0,
+    &quot;msg&quot;: &quot;操作太频繁&quot;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><ul><li>如果用户名已存在，则返回</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+    &quot;success&quot;: 0,
+    &quot;msg&quot;: &quot;用户名已经存在&quot;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><ul><li>注册成功返回</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+    &quot;success&quot;: 1,
+    &quot;msg&quot;: &quot;注册成功&quot;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><ul><li>注册失败返回</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+    &quot;success&quot;: 0,
+    &quot;msg&quot;: &quot;注册失败&quot;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h4 id="用户登录接口"><a href="#用户登录接口" class="header-anchor">#</a> 用户登录接口</h4> <p>请求地址：/app/account/login，分为get请求和post请求↵↵### post请求参数↵- 时间戳：精确到秒↵- token：api_key和时间戳拼接后的32位md5值↵- username: 用户名↵- password: 密码↵↵### 返回数据↵- 如果验证码错误，则返回↵<code>↵{↵ &quot;success&quot;: 0,↵ &quot;msg&quot;: &quot;验证码错误&quot;↵}↵</code>↵- 如果用户名或密码错误，则返回↵<code>↵{↵ &quot;success&quot;: 0,↵ &quot;msg&quot;: &quot;用户名或密码错误&quot;↵}↵</code>↵- 如果用户被锁定，则返回↵<code>↵{↵ &quot;success&quot;: 0,↵ &quot;msg&quot;: &quot;用户被锁定&quot;↵}↵</code>↵- 如果登录成功，则返回↵<code>↵{↵ &quot;success&quot;: 1,↵ &quot;userinfo&quot;: {&quot;username&quot; : &quot;&quot;,&quot;nick_name&quot; : &quot;&quot;,&quot;mobile&quot; : &quot;&quot;,&quot;vip_expire_time&quot; : &quot;&quot;,&quot;utoken&quot; : &quot;&quot;↵ }↵}↵</code>↵↵↵↵↵</p> <h4 id="用户登出接口"><a href="#用户登出接口" class="header-anchor">#</a> 用户登出接口</h4> <p>请求地址：/app/account/logout，分为get请求和post请求↵↵### 请求参数↵- time：精确到秒↵- token：api_key和时间戳拼接后的32位md5值↵↵### 返回数据↵<code>↵{↵ &quot;success&quot;: 1,↵ &quot;msg&quot;: &quot;登出成功&quot;↵}↵</code></p> <h4 id="用户书架获取接口"><a href="#用户书架获取接口" class="header-anchor">#</a> 用户书架获取接口</h4> <p>请求地址：/app/users/bookshelf（要求用户登录）↵↵### 请求参数↵- time：精确到秒↵- token：api_key和时间戳拼接后的32位md5值↵- utoken：用户token↵↵### 返回数据↵- 如果用户未登录，则返回↵<code>↵{↵ &quot;success&quot;: 1,↵ &quot;msg&quot;:&quot;用户未登录&quot;↵}↵</code>↵- 否则返回↵<code>↵{ ↵ &quot;success&quot;: 1, ↵&quot;startItem&quot;: &quot;0&quot;,↵ &quot;favors&quot;: [ { &quot;id&quot;: 1, &quot;book_id&quot;: 6, &quot;create_time&quot;: 1561617487, &quot;update_time&quot;: 1561617487, &quot;user_id&quot;: 4, &quot;book&quot;: { &quot;id&quot;: 6, &quot;book_name&quot;: &quot;霸道狐狸羞羞兔&quot;, &quot;nick_name&quot;: &quot;&quot;, &quot;create_time&quot;: 1561522697, &quot;update_time&quot;: 1561522697, &quot;last_time&quot;: 1561522767, &quot;tags&quot;: &quot;恋爱|都市|生活&quot;, &quot;summary&quot;: &quot;【独家\/每周五更新】现代社会中，生活着隐藏身份的月兔一家人，有爸爸和一双儿女。他们除了要融入普通人的日常，工作、学习、恋爱，还要应付来自天敌——狐狸家族的各种威胁。&quot;, &quot;end&quot;: 1, &quot;author_id&quot;: 1, &quot;author_name&quot;: &quot;佚名&quot;, &quot;cover_url&quot;: &quot;&quot;, &quot;start_pay&quot;: 99999, &quot;money&quot;: &quot;0.00&quot;, &quot;area_id&quot;: 1 } }, { &quot;id&quot;: 2, &quot;book_id&quot;: 1, &quot;create_time&quot;: 1562231627, &quot;update_time&quot;: 1562231627, &quot;user_id&quot;: 4, &quot;book&quot;: { &quot;id&quot;: 1, &quot;book_name&quot;: &quot;耽美诡谈&quot;, &quot;nick_name&quot;: &quot;&quot;, &quot;create_time&quot;: 1560938640, &quot;update_time&quot;: 1562488314, &quot;last_time&quot;: 1562488314, &quot;tags&quot;: &quot;悬疑|恋爱&quot;, &quot;summary&quot;: &quot;几个女孩在城市中的著名鬼屋集会，为您带来一个又一个恐怖诡异的耽美故事&quot;, &quot;end&quot;: 1, &quot;author_id&quot;: 1, &quot;author_name&quot;: &quot;鲁迅&quot;, &quot;cover_url&quot;: &quot;&quot;, &quot;start_pay&quot;: 1, &quot;money&quot;: &quot;1.00&quot;, &quot;area_id&quot;: 1 } } ↵ ] ↵}↵</code>↵↵### 返回数据说明↵- favors: 返回的对象都封装在这个favors里</p> <h4 id="删除收藏接口"><a href="#删除收藏接口" class="header-anchor">#</a> 删除收藏接口</h4> <p>请求地址：/app/users/delfavors（要求用户登录，为安全请用post请求）↵↵### 请求参数↵- time：精确到秒↵- token：api_key和时间戳拼接后的32位md5值↵- ids: 漫画id，可以传多个，用逗号分隔↵↵### 返回数据↵- 如果用户未登录，则返回↵<code>↵{↵ &quot;success&quot;: 1,↵ &quot;msg&quot;:&quot;用户未登录&quot;↵}↵</code>↵- 否则返回↵<code>↵ &quot;success&quot;: 1,↵ &quot;msg&quot;: &quot;删除收藏&quot;↵</code></p> <h4 id="阅读历史获取接口"><a href="#阅读历史获取接口" class="header-anchor">#</a> 阅读历史获取接口</h4> <p>请求地址：/app/users/history（要求用户登录）↵↵### 请求参数↵- time：精确到秒↵- token：api_key和时间戳拼接后的32位md5值↵↵### 返回数据↵- 如果用户未登录，则返回↵<code>↵{↵ &quot;success&quot;: 1,↵ &quot;msg&quot;:&quot;用户未登录&quot;↵}↵</code>↵- 否则返回↵<code>↵{↵ &quot;books&quot;: [{ &quot;book_id&quot;: 1, &quot;cover_url&quot;: &quot;&quot;, &quot;chapter_id&quot;: 2, &quot;chapter_name&quot;: &quot;第1话 短信(1)&quot;, &quot;book_name&quot;: &quot;耽美诡谈&quot;, &quot;end&quot;: 1, &quot;last_time&quot;: 1560939633 }↵ ]↵}↵</code>↵### 返回数据说明↵阅读历史，具体到用户看到哪本漫画的哪一章↵</p> <h4 id="删除阅读历史接口"><a href="#删除阅读历史接口" class="header-anchor">#</a> 删除阅读历史接口</h4> <p>请求地址：/app/users/delhistory（要求用户登录，为安全请用post请求）↵↵### 请求参数↵- time：精确到秒↵- token：api_key和时间戳拼接后的32位md5值↵- ids: 漫画id，可以传多个，用逗号分隔↵↵### 返回数据↵- 如果用户未登录，则返回↵<code>↵{↵ &quot;success&quot;: 0,↵ &quot;msg&quot;:&quot;用户未登录&quot;↵}↵</code>↵- 否则返回↵<code>↵ &quot;success&quot;: 1,↵ &quot;msg&quot;: &quot;删除阅读历史&quot;↵</code></p> <h4 id="获取用户余额接口"><a href="#获取用户余额接口" class="header-anchor">#</a> 获取用户余额接口</h4> <p>请求地址：/app/finance/getBalance（要求用户登录）↵↵### 请求参数↵- time：精确到秒↵- token：api_key和时间戳拼接后的32位md5值↵↵### 返回数据↵- 如果用户未登录，则返回↵<code>↵{↵ &quot;success&quot;: 1,↵ &quot;msg&quot;:&quot;用户未登录&quot;↵}↵</code>↵- 否则返回↵<code>↵ &quot;success&quot;: 1,↵ &quot;balance&quot;: &quot;30&quot;↵</code>↵↵### 返回数据说明↵balance：余额，单位是元</p> <h4 id="vip到期时间获取接口"><a href="#vip到期时间获取接口" class="header-anchor">#</a> vip到期时间获取接口</h4> <p>请求地址：/app/users/getVipExpireTime（要求用户登录）↵↵### 请求参数↵- time：精确到秒↵- token：api_key和时间戳拼接后的32位md5值↵↵### 返回数据↵- 如果用户未登录，则返回↵<code>↵{↵ &quot;success&quot;: 1,↵ &quot;msg&quot;:&quot;用户未登录&quot;↵}↵</code>↵- 否则返回↵<code>↵ &quot;success&quot;: 1,↵ &quot;time&quot;: &quot;1562301218&quot;↵</code>↵↵### 返回数据说明↵- time是时间戳格式，精确到秒</p> <h4 id="用户资料更新接口"><a href="#用户资料更新接口" class="header-anchor">#</a> 用户资料更新接口</h4> <p>请求地址：/app/users/getVipExpireTime（要求用户登录，为安全用post请求）↵↵### 请求参数↵- time：精确到秒↵- token：api_key和时间戳拼接后的32位md5值↵- nickname: 昵称↵↵### 返回数据↵- 如果用户未登录，则返回↵<code>↵{↵ &quot;success&quot;: 1,↵ &quot;msg&quot;:&quot;用户未登录&quot;↵}↵</code>↵- 否则返回↵<code>↵ &quot;success&quot;: 1,↵ &quot;msg&quot;: &quot;修改成功&quot;↵</code></p> <h4 id="绑定手机接口"><a href="#绑定手机接口" class="header-anchor">#</a> 绑定手机接口</h4> <p>请求地址：/app/users/bindphone（要求用户登录，为安全用post请求）↵↵### 请求参数↵- time：精确到秒↵- token：api_key和时间戳拼接后的32位md5值↵- phonecode: 验证码↵- phone：手机号↵↵### 返回数据↵- 如果用户未登录，则返回↵<code>↵{↵ &quot;success&quot;: 1,↵ &quot;msg&quot;:&quot;用户未登录&quot;↵}↵</code>↵- 如果验证码错误，则返回↵<code>↵ &quot;success&quot;: 0,↵ &quot;msg&quot;: &quot;验证码错误&quot;↵</code>↵↵- 如果手机号码已存在，则返回↵<code>↵ &quot;success&quot;: 0,↵ &quot;msg&quot;: &quot;手机号码已存在&quot;↵</code>↵↵</p> <h4 id="发送短信接口"><a href="#发送短信接口" class="header-anchor">#</a> 发送短信接口</h4> <p>请求地址：/app/users/sendcms（要求用户登录）↵↵### 请求参数↵- time：精确到秒↵- token：api_key和时间戳拼接后的32位md5值↵- phone：手机号↵↵### 返回数据↵- 如果用户未登录，则返回↵<code>↵{↵ &quot;success&quot;: 1,↵ &quot;msg&quot;:&quot;用户未登录&quot;↵}↵</code>↵- 如果手机格式不正确，则返回↵<code>↵ &quot;success&quot;: 0,↵ &quot;msg&quot;: &quot;手机格式不正确&quot;↵</code>↵- 发送成功返回↵<code>↵ &quot;success&quot;: 1,↵ &quot;msg&quot;: &quot;（这里每个短信接口返回的消息不同）&quot;↵</code>↵</p> <h4 id="重置密码接口"><a href="#重置密码接口" class="header-anchor">#</a> 重置密码接口</h4> <p>请求地址：/app/users/resetpwd（要求用户登录）↵↵### 请求参数↵- time：精确到秒↵- token：api_key和时间戳拼接后的32位md5值↵- password：密码↵↵### 返回数据↵- 如果用户未登录，则返回↵<code>↵{↵ &quot;success&quot;: 1,↵ &quot;msg&quot;:&quot;用户未登录&quot;↵}↵</code>↵- 如果密码不满足要求，则返回↵<code>↵ &quot;success&quot;: 0,↵ &quot;msg&quot;: &quot;密码在6到21位之间&quot;↵</code>↵- 成功返回↵<code>↵ &quot;success&quot;: 1,↵ &quot;msg&quot;: &quot;修改成功&quot;↵</code></p> <h4 id="用户提交评论接口"><a href="#用户提交评论接口" class="header-anchor">#</a> 用户提交评论接口</h4> <p>请求地址：/app/users/subComment（要求用户登录，用post提交）↵↵### 请求参数↵- time：精确到秒↵- token：api_key和时间戳拼接后的32位md5值↵- utoken：用户登录token↵- comment：评论内容↵- book_id: 被评论的漫画id↵↵### 返回数据↵- 如果用户未登录，则返回↵<code>↵{↵ &quot;success&quot;: 1,↵ &quot;msg&quot;:&quot;用户未登录&quot;,↵ &quot;isLogin&quot; =&gt; &quot;0&quot;↵}↵</code>↵- 如果评论太频繁，触发锁机制，则返回↵<code>↵ &quot;success&quot;: 0,↵ &quot;isLogin&quot; =&gt; &quot;1&quot;,↵ &quot;msg&quot;: &quot;每10秒只能评论一次&quot;↵</code>↵- 评论成功返回↵<code>↵ &quot;success&quot;: 1,↵&quot;isLogin&quot; =&gt; &quot;1&quot;,↵ &quot;msg&quot;: &quot;评论成功&quot;↵</code>↵</p> <h4 id="获取当前用户留言接口"><a href="#获取当前用户留言接口" class="header-anchor">#</a> 获取当前用户留言接口</h4> <p>请求地址：/app/users/message（要求用户登录）↵↵### 请求参数↵- time：精确到秒↵- token：api_key和时间戳拼接后的32位md5值↵- startItem：分页开始节点 //startItem = (curPage-1) * pageSize;//根据页码来决定查询数据的节点↵- pageSize：每页多少个↵↵### 返回数据↵- 如果用户未登录，则返回↵<code>↵{↵ &quot;success&quot;: 1,↵ &quot;msg&quot;:&quot;用户未登录&quot;↵}↵</code>↵- 成功则返回↵<code>↵{ ↵ &quot;success&quot;: 1, ↵&quot;startItem&quot;: &quot;0&quot;,↵ &quot;msg&quot;: [ { &quot;id&quot;: 1, &quot;msg_key&quot;: 4, &quot;type&quot;: 0, &quot;create_time&quot;: 1562479744, &quot;update_time&quot;: 1562479744, &quot;content&quot;: &quot;111111111111111111&quot;, &quot;replys&quot;: [ { &quot;id&quot;: 2, &quot;msg_key&quot;: 1, &quot;type&quot;: 1, &quot;create_time&quot;: 1562479753, &quot;update_time&quot;: 1562479753, &quot;content&quot;: &quot;2222222222222222222222&quot; } ] } ↵ ] ↵}↵</code>↵### 返回数据说明↵- type：消息类型，0是用户留言，1是回复↵- msg_key：消息类型为0时，msg_key是留言用户ID，消息类型为1时，msg_key是被回复消息的id↵- content：留言内容↵- replys：封装的回复留言数组↵</p> <h4 id="用户提交留言接口"><a href="#用户提交留言接口" class="header-anchor">#</a> 用户提交留言接口</h4> <p>请求地址：/app/users/resetpwd（要求用户登录，用post提交）↵↵### 请求参数↵- time：精确到秒↵- token：api_key和时间戳拼接后的32位md5值↵- content：留言内容↵↵### 返回数据↵- 如果用户未登录，则返回↵<code>↵{↵ &quot;success&quot;: 1,↵ &quot;msg&quot;:&quot;用户未登录&quot;↵}↵</code>↵- 成功则返回↵<code>↵{↵ &quot;success&quot;: 1,↵ &quot;msg&quot;:&quot;留言成功&quot;↵}↵</code>↵- 失败返回↵<code>↵{↵ &quot;success&quot;: 1,↵ &quot;msg&quot;:&quot;留言失败&quot;↵}↵</code>↵</p> <h4 id="获取用户奖励接口"><a href="#获取用户奖励接口" class="header-anchor">#</a> 获取用户奖励接口</h4> <p>请求地址：/app/users/getRewards（要求用户登录）↵↵### 请求参数↵- time：精确到秒↵- token：api_key和时间戳拼接后的32位md5值↵↵### 返回数据↵- 如果用户未登录，则返回↵<code>↵{↵ &quot;success&quot;: 1,↵ &quot;msg&quot;:&quot;用户未登录&quot;↵}↵</code>↵- 成功则返回↵``{
+↵    &quot;success&quot;: 1,
+↵    &quot;rewards&quot;: {
+&quot;total&quot;: 1,
+&quot;per_page&quot;: 10,
+&quot;current_page&quot;: 1,
+&quot;last_page&quot;: 1,
+&quot;data&quot;: [
+{
+&quot;id&quot;: 1,
+&quot;user_id&quot;: 4,
+&quot;money&quot;: &quot;0.10&quot;,
+&quot;usage&quot;: 4,
+&quot;summary&quot;: &quot;用户注册奖励&quot;,
+&quot;create_time&quot;: 1560869345,
+&quot;update_time&quot;: 1560869345
+}
+]
+↵    }
+↵}`↵```↵### 返回数据说明↵- total：数据条目总数↵- per_page：每页展示条目↵- current_page：当前页码↵- last_page：最后页码↵- user_id：用户ID↵- usage：固定死的，不用管↵- summary：备注↵</p> <h4 id="获取用户充值接口"><a href="#获取用户充值接口" class="header-anchor">#</a> 获取用户充值接口</h4> <p>请求地址：/app/users/getCharges（要求用户登录）↵↵### 请求参数↵- time：精确到秒↵- token：api_key和时间戳拼接后的32位md5值↵↵### 返回数据↵<code>↵{ ↵ &quot;success&quot;: 1, ↵ &quot;charges&quot;: { &quot;total&quot;: 1, &quot;per_page&quot;: 10, &quot;current_page&quot;: 1, &quot;last_page&quot;: 1, &quot;data&quot;: [ { &quot;id&quot;: 2, &quot;user_id&quot;: 4, &quot;money&quot;: &quot;10.00&quot;, &quot;usage&quot;: 1, &quot;summary&quot;: &quot;支付宝充值&quot;, &quot;create_time&quot;: 1560869345, &quot;update_time&quot;: 1560869345 } ] ↵ } ↵}↵</code>↵↵### 返回数据说明↵- total：数据条目总数↵- per_page：每页展示条目↵- current_page：当前页码↵- last_page：最后页码↵- user_id：用户ID↵- usage：固定死的，不用管↵- summary：备注</p> <h4 id="获取用户消费接口"><a href="#获取用户消费接口" class="header-anchor">#</a> 获取用户消费接口</h4> <p>请求地址：/app/users/getSpendings（要求用户登录）↵↵### 请求参数↵- time：精确到秒↵- token：api_key和时间戳拼接后的32位md5值↵↵### 返回数据↵<code>↵{ ↵ &quot;success&quot;: 1, ↵ &quot;spendings&quot;: { &quot;total&quot;: null, &quot;per_page&quot;: 10, &quot;current_page&quot;: 1, &quot;last_page&quot;: null, &quot;data&quot;: [ { &quot;id&quot;: 3, &quot;user_id&quot;: 4, &quot;money&quot;: &quot;1.00&quot;, &quot;usage&quot;: 3, &quot;summary&quot;: &quot;购买章节&quot;, &quot;create_time&quot;: 1562488323, &quot;update_time&quot;: 1562488323 }, { &quot;id&quot;: 4, &quot;user_id&quot;: 4, &quot;money&quot;: &quot;5.00&quot;, &quot;usage&quot;: 2, &quot;summary&quot;: &quot;购买vip&quot;, &quot;create_time&quot;: 1562488487, &quot;update_time&quot;: 1562488487 } ] ↵ } ↵}↵</code>↵↵### 返回数据说明↵- total：数据条目总数↵- per_page：每页展示条目↵- current_page：当前页码↵- last_page：最后页码↵- user_id：用户ID↵- usage：固定死的，不用管↵- summary：备注</p> <h4 id="用户充值接口"><a href="#用户充值接口" class="header-anchor">#</a> 用户充值接口</h4> <p>请求地址：/app/users/charge（要求用户登录，post请求）↵↵### 请求参数↵- time：精确到秒↵- token：api_key和时间戳拼接后的32位md5值↵- money：充值金额↵- pay_type：充值渠道，0为未知，1为支付宝，2为QQ钱包，3为微信支付↵↵### 返回数据↵<code>↵{↵ &quot;success&quot;: 1,↵ &quot;msg&quot;:&quot;调用充值接口&quot;↵}↵</code></p> <h4 id="购买章节接口"><a href="#购买章节接口" class="header-anchor">#</a> 购买章节接口</h4> <p>请求地址：/app/users/buychapter（要求用户登录，post请求）↵↵### 请求参数↵- time：精确到秒↵- token：api_key和时间戳拼接后的32位md5值↵- chapter_id：章节id↵↵### 返回数据↵- 用户余额不足↵<code>↵{↵ &quot;success&quot;: 0,↵ &quot;msg&quot;:&quot;余额不足&quot;↵}↵</code>↵- 用户多开账号同时购买，触发锁机制↵<code>↵{↵ &quot;success&quot;: 0,↵ &quot;msg&quot;:&quot;同账号非法操作&quot;↵}↵</code>↵- 购买成功↵<code>↵{↵ &quot;success&quot;: 1,↵ &quot;msg&quot;:&quot;购买成功&quot;↵}↵</code>↵↵</p> <h4 id="购买vip接口"><a href="#购买vip接口" class="header-anchor">#</a> 购买vip接口</h4> <p>请求地址：/app/users/buychapter（要求用户登录，post请求）↵↵### 请求参数↵- time：精确到秒↵- token：api_key和时间戳拼接后的32位md5值↵↵### 返回数据↵- 用户余额不足↵<code>↵{↵ &quot;success&quot;: 0,↵ &quot;msg&quot;:&quot;余额不足&quot;↵}↵</code>↵- 传递参数不正确↵<code>↵{↵ &quot;success&quot;: 0,↵ &quot;msg&quot;:&quot;请选择正确的选项&quot;↵}↵</code>↵- 用户多开账号同时购买，触发锁机制↵<code>↵{↵ &quot;success&quot;: 0,↵ &quot;msg&quot;:&quot;同账号非法操作&quot;↵}↵</code>↵- 购买成功↵<code>↵{↵ &quot;success&quot;: 1,↵ &quot;msg&quot;:&quot;购买成功&quot;↵}↵</code>↵</p> <h4 id="地区接口"><a href="#地区接口" class="header-anchor">#</a> 地区接口</h4> <p>请求地址：/app/tags/getAreaList↵↵### 请求参数↵- time：精确到秒↵- token：api_key和时间戳拼接后的32位md5值↵↵### 返回数据示例↵<code>↵{↵ &quot;success&quot;: 1,↵ &quot;areas&quot;: [{&quot;id&quot;: 1,&quot;area_name&quot;: &quot;内地&quot;,&quot;create_time&quot;: 1561699953,&quot;update_time&quot;: 1561699953},{&quot;id&quot;: 2,&quot;area_name&quot;: &quot;韩国&quot;,&quot;create_time&quot;: 1561699962,&quot;update_time&quot;: 1561699962}↵ ]↵}↵</code></p> <h4 id="根据分类获取漫画列表接口"><a href="#根据分类获取漫画列表接口" class="header-anchor">#</a> 根据分类获取漫画列表接口</h4> <p>请求地址：/app/tags/getBookList↵↵### 请求参数↵- time：精确到秒↵- token：api_key和时间戳拼接后的32位md5值↵- area: 地区id↵- tag：分类名↵- end：1为完结，0为连载↵- startItem：分页起始↵- pageSize：分页个数↵↵↵### 返回数据示例↵<code>↵{ ↵ &quot;success&quot;: 1, ↵ &quot;books&quot;: [ { &quot;id&quot;: 34, &quot;book_name&quot;: &quot;加油大魔王！&quot;, &quot;nick_name&quot;: &quot;&quot;, &quot;create_time&quot;: 1562671583, &quot;update_time&quot;: 1562671583, &quot;last_time&quot;: 1562681978, &quot;tags&quot;: &quot;玄幻|热血|动作&quot;, &quot;summary&quot;: &quot;\n 曾经，大魔王曾向人类发起了进攻，三贤者与大魔王苦战，之中的大贤者牺牲自己封印了大魔王。。。800年后，有一个万年见习生：沙拉曼，在参加第32次见习生考试时，又误打误撞作出了催眠气体。而他的宠物蛇小莩来头不小，竟然能变成人形！小莩带着沙拉曼逃走了。而收养沙拉曼的大魔导士实在忍不住了，他似乎有着不可抗拒的理由，破例让沙拉曼升入一年级星优班。 &quot;, &quot;end&quot;: 1, &quot;author_id&quot;: 1, &quot;author_name&quot;: &quot;佚名&quot;, &quot;cover_url&quot;: &quot;&quot;, &quot;start_pay&quot;: 99999, &quot;money&quot;: &quot;0.00&quot;, &quot;area_id&quot;: 1 }, { &quot;id&quot;: 33, &quot;book_name&quot;: &quot;功成神就&quot;, &quot;nick_name&quot;: &quot;&quot;, &quot;create_time&quot;: 1562665882, &quot;update_time&quot;: 1562665882, &quot;last_time&quot;: 1562671018, &quot;tags&quot;: &quot;校园|恋爱|热血&quot;, &quot;summary&quot;: &quot;\n 信仰缺失的现代，神明渐渐衰弱。阴曹地府中，五官王的陨落拉开了神官减员危机的序幕，为了解除危机、稳定神官人数，挑选凡人在现世积累功德，寿终后晋升神官的“见习神官”制度开始被实行，但规章化的制度难免会让个别心术不正的人钻漏洞晋升为神官酿成大祸。一次意外中，少女陈渺渺被五官王转世的陆离川所救，体内莫名混入离川的魂魄，导致离川只有与她合体时才能发挥神力、完成功德修行，在多次纠缠下，渺渺只能无奈卷入这场神官危机之中。 &quot;, &quot;end&quot;: 1, &quot;author_id&quot;: 1, &quot;author_name&quot;: &quot;佚名&quot;, &quot;cover_url&quot;: &quot;&quot;, &quot;start_pay&quot;: 99999, &quot;money&quot;: &quot;0.00&quot;, &quot;area_id&quot;: 1 } ↵ ], ↵ &quot;cate_selector&quot;: &quot;全部&quot;, ↵ &quot;area_selector&quot;: &quot;全部&quot;, ↵ &quot;end_selector&quot;: &quot;全部&quot; ,↵ &quot;count&quot;:24↵}↵</code></p> <h4 id="轮播接口"><a href="#轮播接口" class="header-anchor">#</a> 轮播接口</h4> <p>请求地址：/app/tags/getBanners↵↵### 请求参数↵- time：精确到秒↵- token：api_key和时间戳拼接后的32位md5值↵- num：要展示的轮播个数↵↵### 返回参数示例↵<code>↵{ ↵	&quot;success&quot;: 1, ↵	&quot;banners&quot;: [{ ↵		&quot;id&quot;: 4, ↵		&quot;pic_name&quot;: &quot;https:\/\/www.wuxiuhanman.com\/static\/upload\/banner\/bd\/cf3ad5f31fd300f8679ed1e78295b6.jpg&quot;, ↵		&quot;create_time&quot;: 1574320174, ↵		&quot;update_time&quot;: 1574320174, ↵		&quot;book_id&quot;: 208, ↵		&quot;title&quot;: &quot;欲求王&quot;, ↵		&quot;banner_order&quot;: 3, ↵		&quot;nav_to&quot;: &quot;https:\/\/www.wuxiuhanman.com\/book\/4&quot; ↵	}, { ↵		&quot;id&quot;: 1, ↵		&quot;pic_name&quot;: &quot;https:\/\/www.wuxiuhanman.com\/static\/upload\/banner\/cb\/74248fd76ff7100caac080b603a0f1.jpg&quot;, ↵		&quot;create_time&quot;: 1569643080, ↵		&quot;update_time&quot;: 1572361119, ↵		&quot;book_id&quot;: 490, ↵		&quot;title&quot;: &quot;女上司&quot;, ↵		&quot;banner_order&quot;: 2, ↵		&quot;nav_to&quot;: &quot;https:\/\/www.wuxiuhanman.com\/book\/1&quot; ↵	}, { ↵		&quot;id&quot;: 5, ↵		&quot;pic_name&quot;: &quot;https:\/\/www.wuxiuhanman.com\/static\/upload\/banner\/e8\/7655d6f45ecad7b2c63087e20865c6.jpg&quot;, ↵		&quot;create_time&quot;: 1574405506, ↵		&quot;update_time&quot;: 1574405513, ↵		&quot;book_id&quot;: 786, ↵		&quot;title&quot;: &quot;复仇&quot;, ↵		&quot;banner_order&quot;: 1, ↵		&quot;nav_to&quot;: &quot;https:\/\/www.wuxiuhanman.com\/book\/5&quot; ↵	}] ↵}↵</code></p> <h4 id="变更收藏接口"><a href="#变更收藏接口" class="header-anchor">#</a> 变更收藏接口</h4> <p>请求地址：/app/users/switchfavor（要求用户登录）↵### 请求参数↵- time：精确到秒↵- token：api_key和时间戳拼接后的32位md5值↵- book_id： 要收藏的漫画id↵- isfavor：收藏状态，0未收藏，1已收藏↵↵### 返回数据↵- 如果用户未登录，则返回↵<code>↵{↵ &quot;success&quot;: 0,↵ &quot;msg&quot;:&quot;用户未登录&quot;↵}↵</code>↵- 如果操作太频繁，则返回↵<code>↵{↵ &quot;success&quot;: 0,↵ &quot;msg&quot;:&quot;操作太频繁&quot;↵}↵</code>↵- 否则返回↵<code>↵ &quot;success&quot;: 1,↵ &quot;isfavor&quot;: 1 //1表示收藏成功，0表示取消收藏成功↵</code>↵</p> <h4 id="相关推荐接口"><a href="#相关推荐接口" class="header-anchor">#</a> 相关推荐接口</h4> <p>请求地址：/app/books/getRecommend↵↵### 请求参数↵- time：精确到秒↵- token：api_key和时间戳拼接后的32位md5值↵- book_id: 漫画id↵↵### 返回数据示例↵<code>↵↵{↵ &quot;success&quot;: 1,↵ &quot;comments&quot;: [{&quot;id&quot;: 1,&quot;user_id&quot;: 4,&quot;book_id&quot;: 6,&quot;create_time&quot;: 1561618213,&quot;update_time&quot;: 1561618213,&quot;content&quot;: &quot;好好看看啊！&quot;}↵ ]↵}↵</code></p> <h4 id="用户鉴权接口"><a href="#用户鉴权接口" class="header-anchor">#</a> 用户鉴权接口</h4> <p>请求地址：/app/account/checkAuth↵## 请求参数↵- time：精确到秒↵- token：api_key和时间戳拼接后的32位md5值↵- utoken：用户token↵↵ 如果utoken过期，或者不存在utoken，则success返回-1↵<code>↵{↵ &quot;success&quot;:-1, ↵ &quot;msg&quot;:&quot;Expired token&quot;↵}↵</code>↵app启动时请求这个接口，如果success返回-1，就清理掉app本地的用户信息缓存↵</p> <h2 id="模板开发文档"><a href="#模板开发文档" class="header-anchor">#</a> 模板开发文档</h2> <h4 id="模板文件结构"><a href="#模板文件结构" class="header-anchor">#</a> 模板文件结构</h4> <p>模板文件分为三个目录：index、pub、ucenter↵↵# index父目录 ↵- index目录下包含四个目录：books、chapters、index、rank、tags↵- 大部分模板页面都分为pc端和手机端，pc端模板是以pc_为前缀，主体命名和手机端模板相  同↵↵ ### books子目录↵- index.html：漫画详情页↵- booklist.html：漫画分类页↵### chapters子目录↵- index.html：章节详情页↵### index子目录↵- index子目录下包含5个文件：index.html、pc_index.html、search.html、pc_search.html、vip.html↵- index.html：首页模板↵- search.html：搜索页模板↵- vip.html：公众号引流页（不重要）↵### rank子目录↵- index.html：是漫画排序页↵### tags子目录↵- tags目录下就一个文件：index.html，是移动端展示所有分类小图标的页面，可以没有↵↵# pub目录↵pub目录包含所有公共模板文件，其中：↵- 404.html：404页面↵- base.html：父模板，其他模板页面可以继承他↵- others.html：用来放置一下其他次要的公用的脚本代码，比如统计代码，上下悬浮广告↵- 另外还有些自定义的模板页面，根据你自己的需求定制↵↵# ucenter目录↵ucenter是会员中心，包含四个子目录↵### account子目录↵- login.html：登录页面↵- register.html：注册页面↵- recovery.html：密码找回页面↵↵### finance子目录↵- buychapter.html：购买章节页面↵- buyhistory.html：用户购买历史页面↵- charge.html：用户充值页面↵- chargehistory.html：用户充值历史页面↵- feedback.html：用户充值完成的回调页面↵- spendinghistory.html：用户消费历史页面↵- wallet.html：用户钱包页面↵- vip.html：vip购买页面↵↵### pub子目录↵放置公共模板↵↵### users子目录↵- bindphone.html：绑定手机页面↵- bookshelf.html：收藏页面↵- history.html：阅读历史页面↵- leavemsg.html：提交留言页面↵- message.html：留言记录页面↵- promotion.html：推广链接页面↵- resetpwd.html：重置密码页面↵- ucenter.html：用户中心页面↵- userinfo.html：用户信息页面↵- userphone.html：用户手机页面↵↵</p> <h4 id="公共标签"><a href="#公共标签" class="header-anchor">#</a> 公共标签</h4> <ul><li>site_name：网站名称↵- url：网站域名↵- img_site：图片域名，可用于图片外链↵- links：友情链接列表↵- book_ctrl、chapter_ctrl、tag_ctrl、boolist_act、search_ctrl、rank_ctrl、update_act、author_ctrl都是路由标签，路由定义看这里：<a href="https://www.kancloud.cn/hiliqi/xwx_comic_cms/1383911" target="_blank" rel="noopener noreferrer">https://www.kancloud.cn/hiliqi/xwx_comic_cms/1383911<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <h4 id="首页标签"><a href="#首页标签" class="header-anchor">#</a> 首页标签</h4> <ul><li>banners：轮播列表↵-- 轮播子标签：↵<code>↵vo.title：轮播title，用于循环↵vo.book_id：轮播对应的漫画id↵banners_count：轮播列表个数↵vo.pic_name：轮播的图片地址↵</code>↵- newest：最新漫画列表↵- hot：最多点击漫画列表↵- tops：手动推荐漫画列表↵- ends：完结漫画列表↵-- 以上标签的子标签，用于循环↵<code>↵img_site：后台配置的图片域名↵vo.id：漫画id↵vo.cover_url：漫画封面图地址↵vo.book_name：漫画名↵vo.chapter_count：漫画章节数↵</code>↵- tags：热门分类标签↵<code>↵tag_name：标签名↵</code>↵- catelist：分类列表↵- 分类子标签：↵<code>↵books：漫画数组↵</code>↵</li></ul> <h4 id="搜索页-漫画列表页标签"><a href="#搜索页-漫画列表页标签" class="header-anchor">#</a> 搜索页/漫画列表页标签</h4> <ul><li>hot_search：热搜词列表↵- books：搜索结果列表↵-- 子标签，用于循环↵<code>↵vo.id：漫画id↵vo.cover_url：封面图地址↵vo.book_name：漫画名↵vo.author.author_name：作者名称↵vo.summary：漫画简介↵</code></li></ul> <h4 id="漫画详情页标签"><a href="#漫画详情页标签" class="header-anchor">#</a> 漫画详情页标签</h4> <ul><li>book.cover_url：封面图地址↵- book.book_name：漫画名↵- book.nick_name：漫画别名↵- book.end：漫画状态，用数字表示是否完结，用于逻辑判断↵- book.author.author_name：作者名↵- book.chapters：章节列表，用于循环↵-- 章节循环子标签↵<code>↵vo.chapter_name：章节名↵</code>↵- recommand：相关推荐列表</li></ul> <h4 id="章节内容页标签"><a href="#章节内容页标签" class="header-anchor">#</a> 章节内容页标签</h4> <ul><li>chapter.chapter_name：章节名↵- chapters：章节列表，用于循环↵<code>↵vo.chapter_name：章节名，循环子标签↵</code>↵- photos：章节图片列表↵<code>↵vo.img_url：图片地址，循环子标签↵</code>↵- prev：上一章，子标签同next子标签↵- next：下一章↵-- next的子标签↵<code>↵next.id：章节id↵next.chapter_name：章节名↵next.create_time：创建时间戳↵next.update_time：更新时间戳↵next.book_id：所属漫画id↵next.chapter_order：章节序↵</code>↵- chapter.book_id：章节所属漫画id↵- chapter.book.cover_url：章节所属漫画的封面图地址</li></ul> <h4 id="分类页标签"><a href="#分类页标签" class="header-anchor">#</a> 分类页标签</h4> <ul><li>tags：标签列表↵<code>↵vo.tag_name：标签名称↵</code></li></ul> <h4 id="排行榜页标签"><a href="#排行榜页标签" class="header-anchor">#</a> 排行榜页标签</h4> <p>排行榜页是将点击榜、新书榜、完结榜全部塞进了一个数组里↵- list：即代表整个大数组↵- item['keyword']：用来循环大数组，循环出来的item对象，则是每个榜单的数组↵-- 榜单数组子标签↵<code>↵keyword.id：漫画id↵keyword.cover_url：漫画封面图↵keyword.book_name：漫画名↵keyword.summary：漫画简介↵</code></p> <h4 id="用户中心-用户详情页标签"><a href="#用户中心-用户详情页标签" class="header-anchor">#</a> 用户中心/用户详情页标签</h4> <ul><li>user.nick_name：用户昵称↵</li></ul> <h4 id="用户收藏页标签"><a href="#用户收藏页标签" class="header-anchor">#</a> 用户收藏页标签</h4> <ul><li>favors：收藏漫画数组↵-- 子标签同其他漫画数组子标签</li></ul> <h4 id="用户阅读历史页标签"><a href="#用户阅读历史页标签" class="header-anchor">#</a> 用户阅读历史页标签</h4> <ul><li>books：阅读历史漫画数组↵-- 子标签同其他漫画数组子标签</li></ul> <h4 id="用户留言页标签"><a href="#用户留言页标签" class="header-anchor">#</a> 用户留言页标签</h4> <ul><li>msgs：留言数组↵-- 子标签↵<code>↵vo.create_time：留言创建时间↵vo.content：留言内容↵vo.replys：该留言的所有回复数组↵reply.content：回复内容↵</code></li></ul> <h4 id="用户推广页标签"><a href="#用户推广页标签" class="header-anchor">#</a> 用户推广页标签</h4> <ul><li>promotion_sum：推荐奖励总额↵- reg_reward：注册奖励金额，单位元↵- promotion_rate：下线充值奖励比率，精确到两位小数↵- rewards：奖励历史数组↵-- 子标签↵<code>↵vo.create_time：奖励时间↵vo.money：奖励金额↵</code></li></ul> <h4 id="章节购买页标签"><a href="#章节购买页标签" class="header-anchor">#</a> 章节购买页标签</h4> <p>price：本章价格，单位元↵balance：用户当前余额，单位元</p> <h4 id="购买历史页标签"><a href="#购买历史页标签" class="header-anchor">#</a> 购买历史页标签</h4> <ul><li>buys：购买历史数组↵-- 子标签↵<code>↵vo.book_id：购买漫画id↵vo.cover_url：购买漫画封面图↵vo.chapter.book.book_name：购买漫画名↵vo.create_time：购买时间↵vo.chapter_id：购买章节id↵vo.chapter.chapter_name：购买章节名↵</code></li></ul> <h4 id="充值页标签"><a href="#充值页标签" class="header-anchor">#</a> 充值页标签</h4> <ul><li>moneys：预设充值金额数组↵-- 子标签vo，为预设金额，单位元↵↵- payments：预设充值方式数组↵-- 子标签vo.title，预设充值方式的名称</li></ul> <h4 id="充值记录页标签"><a href="#充值记录页标签" class="header-anchor">#</a> 充值记录页标签</h4> <ul><li>charges：充值记录数组↵-- vo.create_time：充值时间↵-- vo.money：充值金额，单位元</li></ul> <h4 id="消费记录页标签"><a href="#消费记录页标签" class="header-anchor">#</a> 消费记录页标签</h4> <ul><li>spendings：消费记录数组↵-- vo.summary：消费记录备注↵-- vo.create_time：消费时间↵-- vo.money：消费金额</li></ul> <h4 id="用户钱包页标签"><a href="#用户钱包页标签" class="header-anchor">#</a> 用户钱包页标签</h4> <ul><li>balance：用户余额</li></ul> <h2 id="帮助中心"><a href="#帮助中心" class="header-anchor">#</a> 帮助中心</h2> <h4 id="如何开启404"><a href="#如何开启404" class="header-anchor">#</a> 如何开启404</h4> <h1 id="_3-x-版本开启方法↵如果要开启404-而不让cms报错信息显示出来-需要修改config-app-php文件-↵-↵-异常页面的模板文件"><a href="#_3-x-版本开启方法↵如果要开启404-而不让cms报错信息显示出来-需要修改config-app-php文件-↵-↵-异常页面的模板文件" class="header-anchor">#</a> 3.x 版本开启方法↵如果要开启404，而不让cms报错信息显示出来，需要修改config/app.php文件：↵```↵// 异常页面的模板文件</h1> <p>↵    //'exception_tmpl'         =&gt; Env::get('app_path') . 'index/view/pub/404.html',
+↵      'exception_tmpl'         =&gt; Env::get('think_path') . 'tpl/think_exception.tpl',↵```↵只需要把上面一行注释去掉，下面一行加上注释就行了。↵↵</p> <h4 id="忘记后台管理密码"><a href="#忘记后台管理密码" class="header-anchor">#</a> 忘记后台管理密码</h4> <p>可以用这个api新建一个后台管理员https://www.kancloud.cn/hiliqi/xwx_comic_cms/1264147</p> <h4 id="搜索问题"><a href="#搜索问题" class="header-anchor">#</a> 搜索问题</h4> <p>因为要做分词搜索，程序使用了MySQL全文索引，所以需要作一些配置。↵首先，MySQL版本必须&gt;=5.7，才支持中文分词。↵然后在mysql配置文件里，在[mysqld]下面配置这么两项：↵```↵ngram_token_size=1↵ft_min_word_len=1↵````↵然后重启MySQL即可。↵如果索引字段有变，需要重建索引才可，示例语句：↵create fulltext index fidx on xwx_book(book_name,nick_name,author_name,summary) with parser ngram;</p> <h4 id="如何远程图片"><a href="#如何远程图片" class="header-anchor">#</a> 如何远程图片</h4> <ul><li>封面图片↵1. 默认情况下，漫画封面图片本地存储路径是/public/static/upload/book/{book_id}/cover.jpg↵2. book表还有一个字段cover_url用于支持远程路径，如果这个字段不为空，则优先启用远程路径↵↵- 内容图片↵1. 默认情况下，内容图片本地存储路径是/public/static/upload/book/{book_id}/{chapter_id}/{photo_id}.jpg↵2. photo表还有一个字段img_url用于支持远程路径，如果这个字段不为空，则优先启用远程路径↵↵&gt; 如果需要远程图片，则将图片目录（带路径）完整复制到其他服务器即可。目录从static开始复制，也就是说，/static/upload/book/...都要复制过去，然后后台配置图片域名即可。</li></ul> <h4 id="为什么热门漫画空白"><a href="#为什么热门漫画空白" class="header-anchor">#</a> 为什么热门漫画空白</h4> <p>详情见这里：https://www.kancloud.cn/hiliqi/xwx_comic_cms/1171969</p> <h4 id="广告和统计代码放置"><a href="#广告和统计代码放置" class="header-anchor">#</a> 广告和统计代码放置</h4> <ul><li>公共文件：public/template/{当前模板目录}/pub/others.html， 统计代码和公共广告代码（比如上下悬浮代码）都可以放在这里↵- 其他只作用于某一个页面的广告代码，则需要放置在对应的模板文件中。↵- 同理，每个页面的seo信息，也需要进入对应的模板文件修改，模板文件结构请看【模板开发文档】</li></ul> <h4 id="如何让vip免广告"><a href="#如何让vip免广告" class="header-anchor">#</a> 如何让vip免广告</h4> <p>如果想让网站vip用户看不到网站的广告，只需要前台实现下面代码↵<code>↵{if $Think.session.xwx_vip_expire_time - time() &lt; 0}↵ //这里面是广告代码 ↵{/if} ↵</code>↵也就是把你的广告代码包含在这个判断语句中即可</p> <h4 id="时间显示不正确"><a href="#时间显示不正确" class="header-anchor">#</a> 时间显示不正确</h4> <p>如果页面时间显示不正确，如显示1970-01-01，这是因为没有开启自动写入时间戳的功能。↵如何开启：找到config/database.php文件，找到下面代码：↵<code>↵ // 自动写入时间戳字段 ↵ 'auto_timestamp' =&gt; false,↵</code>↵将false改成true即可</p> <h4 id="关闭验证码"><a href="#关闭验证码" class="header-anchor">#</a> 关闭验证码</h4> <ul><li>后台验证码关闭方法：找到\application\admin\controller\Login.php文件，注释25-29行。↵- 前台验证码关闭方法：找到\application\ucenter\controller\Account.php文件，注释92-96行。</li></ul> <h4 id="如何支持其他版本数据库"><a href="#如何支持其他版本数据库" class="header-anchor">#</a> 如何支持其他版本数据库</h4> <p>需要更改一些代码，即可支持MySQL的其他版本，或者MariaDB，但同时搜索功能会失去MySQL全文检索的特性，转为普通的like查询。↵找到application/service/BookService.php文件，找到第152-159行如下代码：↵<code>↵return Db::query( &quot;select * from &quot; . $this-&gt;prefix . &quot;book where delete_time=0 and match(book_name,summary,author_name,nick_name) against ('&quot; . $keyword . &quot;' IN NATURAL LANGUAGE MODE) LIMIT &quot; . $num ); ↵ ↵// $map[] = ['delete_time','=',0]; ↵// $map[] = ['book_name','like','%'.$keyword.'%']; ↵// return Book::where($map)-&gt;select();↵</code>↵将上半部分代码注释，将下半部分代码取消注释。↵然后找到application/install/sql/install.sql文件，找到第145-146行如下代码：↵<code>↵ -- KEY `book_name` (`book_name`) USING BTREE ,↵ FULLTEXT KEY `fidx` (`book_name`,`summary`,`nick_name`,`author_name`) with parser ngram,↵</code>↵将上面一行代码取消注释，并将下面一行代码删除。↵在更改了这两个文件之后，再进行程序的安装，这时你可以选择其他版本的数据库了。</p> <h4 id="如何自定义路由"><a href="#如何自定义路由" class="header-anchor">#</a> 如何自定义路由</h4> <p>在public目录下的index.php文件里定义：↵<code>↵define('BOOKCTRL', 'book'); //book路由↵↵define('CHAPTERCTRL','chapter'); //chapter路由↵↵define('TAGCTRL','tag'); //tag路由↵↵define('BOOKLISTACT','booklist'); //booklist路由↵↵define('SEARCHCTRL','search'); //search路由↵↵define('RANKCTRL', 'rank'); //rank路由↵↵define('UPDATEACT','update'); //update路由↵↵define('AUTHORCTRL','author'); //author路由↵</code>↵- 注意define函数的参数，左边的是常量，不可更改，大家需要改的是右边的。↵- 改动右边的参数会决定你的url地址长什么样。</p> <h4 id="开启推广链接转短网址"><a href="#开启推广链接转短网址" class="header-anchor">#</a> 开启推广链接转短网址</h4> <p>为了加强网站推广功能，特地加入了推广链接转新浪短网址的功能，站长可以选择性开启。↵如果要开启该项功能，前往\application\ucenter\controller\User.php文件，注释掉354行，取消355行注释：↵<code>↵$shortUrl = $url.'?pid='.session('xwx_user_id'); ↵ //$shortUrl = $util-&gt;shorturl($url.'?pid='.session('xwx_user_id'));↵</code>↵同时，前往\extend\util\Common.php文件，将appkey替换为你自己的新浪appkey即可</p> <h2 id="sql命令大全"><a href="#sql命令大全" class="header-anchor">#</a> sql命令大全</h2> <h4 id="v5修改数据库图片地址"><a href="#v5修改数据库图片地址" class="header-anchor">#</a> V5修改数据库图片地址</h4> <p>V5版本不再支持图片域名，因为图片地址都写死在了数据库↵可以用SQL命令进行修改，以下是示例，在域名前面加上图片域名（注意要过滤掉外链的那些图片）↵<code>↵UPDATE xwx_photo SET img_url=CONCAT('http://img.xxx.com/', img_url) ↵UPDATE xwx_book SET cover_url=CONCAT('http://img.xxx.com/', cover_url)↵</code>↵如果要添加过滤条件，只修改本地图片，以下是SQL示例：↵<code>↵UPDATE xwx_photo SET img_url=CONCAT('http://img.xxx.com/', img_url) WHERE img_url LIKE '/static/upload%' ↵</code>↵如果要批量替换前面的图片域名，以下是示例：↵<code>↵UPDATE xwx_book SET cover_url=REPLACE(cover_url,'http://img.老域名.com/','http://img.新域名.com/') ↵</code></p> <h4 id="统计总点击数"><a href="#统计总点击数" class="header-anchor">#</a> 统计总点击数</h4> <ul><li>统计所有漫画的总点击数↵<code>↵SELECT book_id, sum(clicks) as click FROM `xwx_clicks` GROUP BY book_id↵</code>↵↵- 统计单本漫画的总点击数↵<code>↵SELECT click FROM(SELECT book_id, sum(clicks) as click FROM `xwx_clicks` GROUP BY book_id) as a WHERE book_id=36 ↵</code></li></ul></div> <footer class="page-edit" style="display:none;"><!----> <div class="last-updated"><span class="prefix">更新于: </span> <span class="time">12/14/2020, 1:57:11 PM</span></div></footer> <!----></main> <!----> <div style="display:none;" data-v-319dd33c data-v-319dd33c><div class="comments-wrapper" data-v-319dd33c><!----></div></div></div></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-44bd5a18 data-v-44bd5a18><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-44bd5a18><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-44bd5a18></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-44bd5a18></path></svg></div><div class="kanbanniang" data-v-5775ee02><div class="banniang-container" style="display:;" data-v-5775ee02><div class="messageBox" style="right:68px;bottom:190px;display:none;" data-v-5775ee02>
+      欢迎来到 love
+    </div> <div class="operation" style="right:90px;bottom:40px;display:none;" data-v-5775ee02><i class="kbnfont kbn-ban-home ban-home" data-v-5775ee02></i> <i class="kbnfont kbn-ban-message message" data-v-5775ee02></i> <i class="kbnfont kbn-ban-close close" data-v-5775ee02></i> <a target="_blank" href="https://vuepress-theme-reco.recoluan.com/views/plugins/kanbanniang.html" data-v-5775ee02><i class="kbnfont kbn-ban-info info" data-v-5775ee02></i></a> <i class="kbnfont kbn-ban-theme skin" style="display:none;" data-v-5775ee02></i></div> <canvas id="banniang" width="150" height="220" class="live2d" style="right:90px;bottom:-20px;opacity:0.9;" data-v-5775ee02></canvas></div> <div class="showBanNiang" style="display:none;" data-v-5775ee02>
+    看板娘
+  </div></div><!----></div></div>
+    <script src="/assets/js/app.559d69a3.js" defer></script><script src="/assets/js/3.5ef223c7.js" defer></script><script src="/assets/js/1.171e35cc.js" defer></script><script src="/assets/js/15.29f5931d.js" defer></script><script src="/assets/js/11.e77c0f03.js" defer></script>
+  </body>
+</html>

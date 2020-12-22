@@ -27,27 +27,31 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "2020/宝塔面板搭建qinVideo2.0说明.html",
-    "revision": "f73d0deead6e6d9875784f7bb4acb5b6"
+    "revision": "ac8e3ce5e2f3d7aa6735d1ac840797c5"
   },
   {
     "url": "2020/宝塔面板搭建小浣熊cms3.0说明.html",
-    "revision": "b23cf240f4d914607d524452bc63d4ea"
+    "revision": "82d2259e97616a508881720ddbf57fe4"
+  },
+  {
+    "url": "2020/小浣熊cms3.0文档.html",
+    "revision": "3589771ec45324ebc6141f52bd483d29"
   },
   {
     "url": "2020/记录几个好看的cms网站及源码站.html",
-    "revision": "76ea75604b2e31188d74b0a835f82c4b"
+    "revision": "801f58e3d37b786b31669ac769768ada"
   },
   {
     "url": "404.html",
-    "revision": "42a73efda6f5aaa0c0ec0a705d71198e"
+    "revision": "31fb10a52188842e37e92da0c7a1b5a1"
   },
   {
     "url": "about/index.html",
-    "revision": "f7ff04a3cd85084a77cb7ceef243979c"
+    "revision": "ba19408d74e1409da40e731cd265e943"
   },
   {
-    "url": "assets/css/0.styles.0fbb1966.css",
-    "revision": "ea395fb49df333d3d9d417d095a8816d"
+    "url": "assets/css/0.styles.142a074b.css",
+    "revision": "958b2d15cd33a9037e9b2d61a748869a"
   },
   {
     "url": "assets/img/home-bg.7b267d7c.jpg",
@@ -58,68 +62,80 @@ self.__precacheManifest = [
     "revision": "117d8006a3c478fbc8c4ce04a36ddb5a"
   },
   {
-    "url": "assets/js/1.5d61d03b.js",
-    "revision": "e42920cb2508f360ea007fdcf242f331"
+    "url": "assets/js/1.171e35cc.js",
+    "revision": "3dcd13693fee4483a4da1f191561df12"
   },
   {
-    "url": "assets/js/10.48a4ee78.js",
-    "revision": "ab2721222d6abcc65fc599de858bb20b"
+    "url": "assets/js/10.a20084fe.js",
+    "revision": "182a1f9ffa19d9d3390028700b441da5"
   },
   {
-    "url": "assets/js/11.59f75692.js",
-    "revision": "7008355a37408d0cdce01413107131b2"
+    "url": "assets/js/11.e77c0f03.js",
+    "revision": "fe3a20edf60c189081e59656b4cf6546"
   },
   {
-    "url": "assets/js/12.67de3f4c.js",
-    "revision": "e6d8d2a86faf348b6741dc0394d961c6"
+    "url": "assets/js/12.b01ecebd.js",
+    "revision": "54c91ccd4d32cd3de4d177e63dc40eaf"
   },
   {
-    "url": "assets/js/13.e1657e4d.js",
-    "revision": "c694c32eeeb5d404726fb5c12287b334"
+    "url": "assets/js/13.88839404.js",
+    "revision": "ec944f31d3f1964740a1f9b49da30318"
   },
   {
-    "url": "assets/js/14.c7023304.js",
-    "revision": "bb6a6f735273a881c5a6943a4c4d1267"
+    "url": "assets/js/14.e1ca8ad1.js",
+    "revision": "45d8a668ec8f25568c23b911242bcefc"
   },
   {
-    "url": "assets/js/15.bb79a05d.js",
-    "revision": "b9cbc7f9c8e17aba4d54f41b4f4ea74c"
+    "url": "assets/js/15.29f5931d.js",
+    "revision": "ff4176574d955b3d332028201d0d49ff"
   },
   {
-    "url": "assets/js/16.eda83008.js",
-    "revision": "fb0c549994c0e1f01e508eb448a001da"
+    "url": "assets/js/16.640a863a.js",
+    "revision": "6991f1eb142cd6bf24ba777123e79fa0"
   },
   {
-    "url": "assets/js/3.0148cc7b.js",
-    "revision": "6e200271a7ecd9274e5479c7a7da8af2"
+    "url": "assets/js/17.1e66dded.js",
+    "revision": "e5eb8180cc25de484bc1ab5cdf1b8235"
   },
   {
-    "url": "assets/js/4.cf0b4d86.js",
-    "revision": "a9b9335f943d78abb017493836c38922"
+    "url": "assets/js/18.43c69731.js",
+    "revision": "0d74a0e57335e9e96adcb7d7a3ebb59f"
   },
   {
-    "url": "assets/js/5.c00706ae.js",
-    "revision": "2515db7447cb3058a1543bc8ee689846"
+    "url": "assets/js/19.a816fa71.js",
+    "revision": "a5364e7c5e149939ef1f79fad241e08b"
   },
   {
-    "url": "assets/js/6.29d05cd1.js",
-    "revision": "9ea86a67292621be130a80b54e84d488"
+    "url": "assets/js/3.5ef223c7.js",
+    "revision": "14396ba5360b1e960125779501ca49e5"
   },
   {
-    "url": "assets/js/7.90d33b92.js",
-    "revision": "444d7785ab20e9dcc401d6a7ec4661aa"
+    "url": "assets/js/4.7ed447b5.js",
+    "revision": "69a636f740ef6560aa7ee6a713225c27"
   },
   {
-    "url": "assets/js/8.a3547c89.js",
-    "revision": "716d035f1e8fa6f690f00178ea0e82d1"
+    "url": "assets/js/5.3da76f78.js",
+    "revision": "7e14e20c023c94be066e26c1f12f30b7"
   },
   {
-    "url": "assets/js/9.f6cd1958.js",
-    "revision": "b52d459f6178b14a2656c89941439d18"
+    "url": "assets/js/6.5f8de717.js",
+    "revision": "649d332f6d68f1ee7e0174014dfcc470"
   },
   {
-    "url": "assets/js/app.a06c1ff7.js",
-    "revision": "34d2b7b30a4e0bc02ca07a17cca14fdc"
+    "url": "assets/js/7.d0e495c6.js",
+    "revision": "18fa95d10e6062aca1a08c5b54ceb5e7"
+  },
+  {
+    "url": "assets/js/8.3066479f.js",
+    "revision": "fbb3039d8ba503d4403da1cc0e0f3d50"
+  },
+  {
+    "url": "assets/js/9.d314079d.js",
+    "revision": "789781495ac782acc9a02e94e299fc77"
+  },
+  {
+    "url": "assets/js/app.559d69a3.js",
+    "revision": "a3cd024471e0f54ad57c4763f3c333fb"
   },
   {
     "url": "aurora_sky.jpg",
@@ -127,15 +143,15 @@ self.__precacheManifest = [
   },
   {
     "url": "categories/CMS/index.html",
-    "revision": "ed09e2c645c80dc0e9ece8a01bb37c41"
+    "revision": "f9978f5bdc6d21c5b7e829b7ede5bb4b"
   },
   {
     "url": "categories/index.html",
-    "revision": "41f926e4e30bfe83929991fe9ce8429c"
+    "revision": "4a8c65c8379ba57a3dcd8eeb19c35f3a"
   },
   {
     "url": "categories/个人/index.html",
-    "revision": "ae57cb9fdea1fbf5c9780bf973f2310c"
+    "revision": "53c702819e4b090f31120bb8ad2f4be2"
   },
   {
     "url": "icons/128.png",
@@ -159,7 +175,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "a91fc6a75ab49e9a0a90abb301a924d1"
+    "revision": "0b78a11a79604f55d7955a42b59ed349"
   },
   {
     "url": "js/MouseClickEffect.js",
@@ -171,11 +187,11 @@ self.__precacheManifest = [
   },
   {
     "url": "tag/index.html",
-    "revision": "dfe7264250df35c69b5fbb09aa6e8f3c"
+    "revision": "c49df7edf98913b9a9630fa1133921a1"
   },
   {
     "url": "timeline/index.html",
-    "revision": "c803d72eac78d6a0cc526d4bd230559a"
+    "revision": "68b96f15a3edb6fa83c26b68a978ee99"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});

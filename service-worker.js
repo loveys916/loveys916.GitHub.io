@@ -27,31 +27,31 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "2020/centos7可视化+RDP.html",
-    "revision": "50c285a16d95ee1cc85db27ed8616a97"
+    "revision": "dca79cf0cda7c20629ed51be12639bc7"
   },
   {
     "url": "2020/宝塔面板搭建qinVideo2.0说明.html",
-    "revision": "fd96bc6438d154a8dacd27e26f9e6442"
+    "revision": "a237cf4c3ca64ba6d0a87f17a42ca322"
   },
   {
     "url": "2020/宝塔面板搭建小浣熊cms3.0说明.html",
-    "revision": "cff62d27345ff634630f300eac16a772"
+    "revision": "524043d7bd332e7621b12b244de21aad"
   },
   {
     "url": "2020/小浣熊cms3.0文档.html",
-    "revision": "d056180b2c20386c0e4454db7b05ab6a"
+    "revision": "5c031877a28456f6ca72739135f1faba"
   },
   {
     "url": "2020/记录几个好看的cms网站及源码站.html",
-    "revision": "1b00af5789303c98ec90749e4bafb22f"
+    "revision": "adb5ea665573e913f39896b2c1cccc27"
   },
   {
     "url": "404.html",
-    "revision": "ac590225890d3ea2b1891406e469c817"
+    "revision": "60c6cf79400c3d40d8ab59ad51ac3d03"
   },
   {
     "url": "about/index.html",
-    "revision": "ef6864a0d75ebd0bdebb379de3faf459"
+    "revision": "fda4f4d6be9f09d19b99951258b26771"
   },
   {
     "url": "assets/css/0.styles.142a074b.css",
@@ -142,8 +142,8 @@ self.__precacheManifest = [
     "revision": "737f48313b32c8df0a3d6cba5c63cb11"
   },
   {
-    "url": "assets/js/app.50403749.js",
-    "revision": "698b85859895bcbd53777c4c83805239"
+    "url": "assets/js/app.0f305673.js",
+    "revision": "13463b3037565457570c3bbe7c004140"
   },
   {
     "url": "aurora_sky.jpg",
@@ -151,15 +151,19 @@ self.__precacheManifest = [
   },
   {
     "url": "categories/CMS/index.html",
-    "revision": "4556592b0a9fdf6ac9d886ba61e65996"
+    "revision": "f788276988d4345885b29c45bf3468a4"
   },
   {
     "url": "categories/index.html",
-    "revision": "a41686091ee72809d5b3eb0814b35ffb"
+    "revision": "eadc780ec14a328fcd4154f4a32c48de"
+  },
+  {
+    "url": "categories/Linux/index.html",
+    "revision": "5d220ffaa503d39e160fe7fc0e6c10f7"
   },
   {
     "url": "categories/个人/index.html",
-    "revision": "7f90d26a2f6575ee96f13f8908f45099"
+    "revision": "c928e796cd7a3f940253f37dd6212034"
   },
   {
     "url": "icons/128.png",
@@ -183,7 +187,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "61ba4825837f09f85ed57b4b9945c031"
+    "revision": "e4877155477e538380ccd2ee338aa63f"
   },
   {
     "url": "js/MouseClickEffect.js",
@@ -195,11 +199,11 @@ self.__precacheManifest = [
   },
   {
     "url": "tag/index.html",
-    "revision": "74c03f00907b77db918e71a44bf1d6bf"
+    "revision": "79c405830e4cbeecb80ea164bd58c057"
   },
   {
     "url": "timeline/index.html",
-    "revision": "e601e77891d294a0c259c4dd01dd746b"
+    "revision": "b8023ed35070df25b562b7a7e41ff5d1"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});

@@ -27,35 +27,35 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "2020/centos7可视化+RDP.html",
-    "revision": "86141122faa9d68f73aae787f4ca69db"
+    "revision": "4edc74ffc34679e207864609790a7c55"
   },
   {
     "url": "2020/宝塔面板搭建qinVideo2.0说明.html",
-    "revision": "ad190b3681fdea4e66a07128df52802c"
+    "revision": "d447e7da540b5313a1ec39219e36bae9"
   },
   {
     "url": "2020/宝塔面板搭建小浣熊cms3.0说明.html",
-    "revision": "33506ce8d6d80cd2c1cd40e27b77c4ec"
+    "revision": "fb2256839efe7eccbae44ca99affe990"
   },
   {
     "url": "2020/小浣熊cms3.0文档.html",
-    "revision": "96252c43fd83f4bf10efff5c5f426028"
+    "revision": "fe8107b6cc533bbebbe8703514ca74bc"
   },
   {
     "url": "2020/记录几个好看的cms网站及源码站.html",
-    "revision": "3e072dbe197e5a6246a27dc6f9344e98"
+    "revision": "1efb88accf734bdc3104d956f609b38a"
   },
   {
     "url": "2020/部分接码平台2020-12-30.html",
-    "revision": "0d145ce6fc3d11eafbe42be2fa1e1281"
+    "revision": "1256e5c622be25b87dd73ddd166ae1eb"
   },
   {
     "url": "404.html",
-    "revision": "994233bc4531b5dcc24626f6708e3356"
+    "revision": "d19a330622f2819b4a6d68fba2574cc3"
   },
   {
     "url": "about/index.html",
-    "revision": "2240cb378f43eaf4a8d8fdaba6bec917"
+    "revision": "09d03d6c538977d7a5185e727b0b1ceb"
   },
   {
     "url": "assets/css/0.styles.142a074b.css",
@@ -150,8 +150,8 @@ self.__precacheManifest = [
     "revision": "737f48313b32c8df0a3d6cba5c63cb11"
   },
   {
-    "url": "assets/js/app.c9beef65.js",
-    "revision": "bc708bfa521a7ad59a800b3925079c9e"
+    "url": "assets/js/app.23db9b65.js",
+    "revision": "b50325e22879885de507ae59d35791f2"
   },
   {
     "url": "aurora_sky.jpg",
@@ -159,19 +159,23 @@ self.__precacheManifest = [
   },
   {
     "url": "categories/CMS/index.html",
-    "revision": "47edf8314086673cd4d6176427300b9a"
+    "revision": "adad4ce604a5b7e991cff70dd2524a71"
   },
   {
     "url": "categories/index.html",
-    "revision": "2694ea4aa57164b089fcbc19225c2166"
+    "revision": "9931cae5d4c073437125dee665a953be"
   },
   {
     "url": "categories/Linux/index.html",
-    "revision": "d21735f25034404b2737f7d48f9bdfcf"
+    "revision": "d278388babda942d40ce0f7255952769"
   },
   {
     "url": "categories/个人/index.html",
-    "revision": "2905f2461abdbaf73fdd94879123794a"
+    "revision": "aabcd38058b9e6895e19de3d38293f09"
+  },
+  {
+    "url": "categories/杂事/index.html",
+    "revision": "e35338f72d5ad49a69040f25840680a3"
   },
   {
     "url": "icons/128.png",
@@ -195,7 +199,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "2e366ba5f998066f1a391a8e3ec1cf4c"
+    "revision": "a659244be4cd16190ecfe1b18d3dbb22"
   },
   {
     "url": "js/MouseClickEffect.js",
@@ -207,11 +211,11 @@ self.__precacheManifest = [
   },
   {
     "url": "tag/index.html",
-    "revision": "9dd20cc9abdb539be6b3bbc5f541a636"
+    "revision": "cc665048db5be1ef4545509f709e7439"
   },
   {
     "url": "timeline/index.html",
-    "revision": "cd37f823781e244af1b4c3096f3d8c34"
+    "revision": "b7f40f07250925f48ee5784e5075e8cb"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});

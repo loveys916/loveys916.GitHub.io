@@ -27,39 +27,39 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "2020/centos7可视化+RDP.html",
-    "revision": "e9b6819e0716eda1d1a7a8945c5cdbea"
+    "revision": "df2ab9fc496c0094bcd0d6ee40a4c46e"
   },
   {
     "url": "2020/宝塔面板搭建qinVideo2.0说明.html",
-    "revision": "5a121cd1e27a1160d2903cd2e015b0f7"
+    "revision": "7e8c0f6f77c41754e818cbc0341ec7eb"
   },
   {
     "url": "2020/宝塔面板搭建小浣熊cms3.0说明.html",
-    "revision": "43756a077aace8345a615500be746688"
+    "revision": "50f0911e66c9f4ba42df01f018153fc7"
   },
   {
     "url": "2020/小浣熊cms3.0文档.html",
-    "revision": "154b9cd54774e1851156e38ac0e75038"
+    "revision": "bfdc38f3f9ff39d0b5cafd11c54259de"
   },
   {
     "url": "2020/记录几个好看的cms网站及源码站.html",
-    "revision": "156e5addd86b71f63a970b7f58ff34fb"
+    "revision": "f08c53c5c68d4c0b221da8ad53ff6039"
   },
   {
     "url": "2020/部分接码平台2020-12-30.html",
-    "revision": "ee0db47aa4a6bba69e494cc3db7f62ce"
+    "revision": "fb9f64619c3d9aab4506875fb68d7779"
   },
   {
     "url": "2021/TG群组推荐.html",
-    "revision": "fc296ec91fc392b1300482227dcb3da9"
+    "revision": "b6c6d4b5d187c38886d255fa215b8c6d"
   },
   {
     "url": "404.html",
-    "revision": "fd40b284672b303f105f641219d764c4"
+    "revision": "0f7351a5c0c2130bad517c3ff099e15e"
   },
   {
     "url": "about/index.html",
-    "revision": "7e52d95a3a08d18e0b7f5496111ba829"
+    "revision": "a1cb092b1a044c2cff15a449f01670ee"
   },
   {
     "url": "assets/css/0.styles.142a074b.css",
@@ -106,8 +106,8 @@ self.__precacheManifest = [
     "revision": "8093825f12cd9aa14ae56312c8c857e7"
   },
   {
-    "url": "assets/js/17.8811825d.js",
-    "revision": "31c2a2e165bbf2deebad6202164d2c26"
+    "url": "assets/js/17.840d8c02.js",
+    "revision": "dc828594a8911cb3de08fbf350ab6057"
   },
   {
     "url": "assets/js/18.8e2a4d20.js",
@@ -158,8 +158,8 @@ self.__precacheManifest = [
     "revision": "737f48313b32c8df0a3d6cba5c63cb11"
   },
   {
-    "url": "assets/js/app.6630cc57.js",
-    "revision": "12ff0c1d5a841272a6fa35767cabddf6"
+    "url": "assets/js/app.68111859.js",
+    "revision": "f3d9e27dc6d807114ffc1e46022acbd9"
   },
   {
     "url": "aurora_sky.jpg",
@@ -167,27 +167,27 @@ self.__precacheManifest = [
   },
   {
     "url": "categories/CMS/index.html",
-    "revision": "944d50fcf4f71356e6224aace8a5b175"
+    "revision": "82f3602094cb53df5863022bb5afc902"
   },
   {
     "url": "categories/index.html",
-    "revision": "cec361b4d5669f53997bba72b51aa5e0"
+    "revision": "7817e703fa3f7c8956232cda217de3ea"
   },
   {
     "url": "categories/Linux/index.html",
-    "revision": "22d0b72985251d8fcdc26ee01cd158ac"
+    "revision": "f74e71b7aeff8195d6d2284582d9747e"
   },
   {
     "url": "categories/Telegram/index.html",
-    "revision": "f125e93129f3e059975ca683603331c8"
+    "revision": "602fcf64abe16cef1a670184cd6b120d"
   },
   {
     "url": "categories/个人/index.html",
-    "revision": "5d1e9ca60c3b601ef1be9a7e1c98091b"
+    "revision": "579aec28aef4ee5da72ef8ca0ec9cfce"
   },
   {
     "url": "categories/杂事/index.html",
-    "revision": "5b8539c403894cb005cb7833df0e739b"
+    "revision": "cf86e872a06f73685bcef1ec16736d4f"
   },
   {
     "url": "icons/128.png",
@@ -211,7 +211,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "13daff15433d7175d98c18987f1a2a6a"
+    "revision": "4103e785502bff3575a3751d5a10fa32"
   },
   {
     "url": "js/MouseClickEffect.js",
@@ -223,11 +223,11 @@ self.__precacheManifest = [
   },
   {
     "url": "tag/index.html",
-    "revision": "26bacb8af8f9a17dfe2167d2455284be"
+    "revision": "c81a63b8c68080724960ea24cfd7f999"
   },
   {
     "url": "timeline/index.html",
-    "revision": "2ac74aaa7a8cc03d9e8ffca191e4041d"
+    "revision": "3c7d6dbcf65c89fae4bcec30e6e108bd"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});

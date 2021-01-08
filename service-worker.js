@@ -27,43 +27,43 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "2020/centos7可视化+RDP.html",
-    "revision": "586b0e00c2a9cbc0cedc7fac4e4416d4"
+    "revision": "d2fc6327e62704d997d6a5e9b143d3fc"
   },
   {
     "url": "2020/宝塔面板搭建qinVideo2.0说明.html",
-    "revision": "2691c8a931afac63303dfaa3e60c1223"
+    "revision": "d24d6b60629b1681a66cd5873ea06401"
   },
   {
     "url": "2020/宝塔面板搭建小浣熊cms3.0说明.html",
-    "revision": "ae87c6eb2eda37c145359b1f71d23d51"
+    "revision": "83ad8019ddc7f95c7d5327cfb8ce7a7d"
   },
   {
     "url": "2020/小浣熊cms3.0文档.html",
-    "revision": "449bcb7f7adf4aa68e20f85853e15936"
+    "revision": "468c3cae012c2c5524944baf9247cf26"
   },
   {
     "url": "2020/记录几个好看的cms网站及源码站.html",
-    "revision": "0d893b9e1096dae32b1d92d7751c1c03"
+    "revision": "7a64a69383239653355506c5d984fea6"
   },
   {
     "url": "2020/部分接码平台2020-12-30.html",
-    "revision": "77db385eda77340f2d31717d42c16e92"
+    "revision": "284e4c68a36290f36d0cfe4f4e883975"
   },
   {
     "url": "2021/1/TG群组推荐.html",
-    "revision": "9b16722d18b99010740aadcbb12590b3"
+    "revision": "82b26cb35f1899b93210d02c1fa3a7a7"
   },
   {
     "url": "2021/1/使用GITHUB成为CDN服务.html",
-    "revision": "f72d112a32ef2536e7ba54f5a54a8ba0"
+    "revision": "eb461e15e02094b65c3afaf151347b35"
   },
   {
     "url": "404.html",
-    "revision": "eac276afdb6ef385a1fe70da90ed2309"
+    "revision": "276fef73cdf35f53cc6c23465d809a60"
   },
   {
     "url": "about/index.html",
-    "revision": "20d250984f2bb670fb4f656d90688a7d"
+    "revision": "9fdf73a5559cc83636dd26ab90d5499d"
   },
   {
     "url": "assets/css/0.styles.142a074b.css",
@@ -166,8 +166,8 @@ self.__precacheManifest = [
     "revision": "737f48313b32c8df0a3d6cba5c63cb11"
   },
   {
-    "url": "assets/js/app.33450cb5.js",
-    "revision": "5dedb63cccc4c0155c5aa2960616bf93"
+    "url": "assets/js/app.c225d78c.js",
+    "revision": "6a4cf97cd3ea67bacfff455aec18bc2b"
   },
   {
     "url": "aurora_sky.jpg",
@@ -175,31 +175,35 @@ self.__precacheManifest = [
   },
   {
     "url": "categories/CMS/index.html",
-    "revision": "7663341ea4c5c890866930822198ef95"
+    "revision": "d83a9dce1f5f7fccaacc7affe7cbe262"
   },
   {
     "url": "categories/Github/index.html",
-    "revision": "6c1c5ba25be879e1b154033155bfe53c"
+    "revision": "822bc30d6bb9006097a19f5284badd7a"
   },
   {
     "url": "categories/index.html",
-    "revision": "8bb7baefa62c618d268c99e18a2ec655"
+    "revision": "cca0f6e026ce658446db24861421368d"
   },
   {
     "url": "categories/Linux/index.html",
-    "revision": "15adbb95790bdd73c54bf3a8a397b9d5"
+    "revision": "f07febad77c6f9439ea31aba6f21237b"
   },
   {
     "url": "categories/Telegram/index.html",
-    "revision": "c68f57d1d3426aaed0814072a1aa6352"
+    "revision": "bbb22a6226b09c4be514e4e474a7947f"
   },
   {
     "url": "categories/个人/index.html",
-    "revision": "d6a9a0c54303b3ecff792bb210eacd8b"
+    "revision": "bb3df2502585ae6f8524ed3777925e71"
+  },
+  {
+    "url": "categories/免费/index.html",
+    "revision": "fa053bc8b25d53464efe700bc5f10746"
   },
   {
     "url": "categories/杂事/index.html",
-    "revision": "b61f6afaeadc9909233119e13e7d7ef6"
+    "revision": "dfdcce1abbd003c5f057ee43a8a87cad"
   },
   {
     "url": "icons/128.png",
@@ -223,7 +227,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "8d53ef66eea4f188ff2285f4846f4f1f"
+    "revision": "43048de1804ff5546385faccb842fd2a"
   },
   {
     "url": "js/MouseClickEffect.js",
@@ -235,11 +239,11 @@ self.__precacheManifest = [
   },
   {
     "url": "tag/index.html",
-    "revision": "2bca04e1d1138b09316c7854b472ce11"
+    "revision": "c2b3741c0562f3b26b5f6c63c041746e"
   },
   {
     "url": "timeline/index.html",
-    "revision": "230271a30f517fbb20b12bc12f8f2278"
+    "revision": "59339d3aa4728f613ec5f970296f9c85"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
